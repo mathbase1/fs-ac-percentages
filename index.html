@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172d43">
+<meta name="description" content="Independent adaptive percentage practice for Pearson Edexcel Functional Skills Mathematics Level 1. Six gentle mental starters, worded percentage amounts and changes, and an integrated calculator.">
+<title>Percentages Studio | Functional Skills Level 1</title>
+<style>:root{--ink:#172d43;--muted:#586b7e;--paper:#fff;--bg:#f3f5f7;--soft:#edf3f5;--line:#d7e1e7;--accent:#006b65;--accent-soft:#e6f4f0;--on-accent:#fff;--error:#a82537;--warn:#805400;--shadow:0 9px 32px rgba(21,44,62,.055);--radius:18px;font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;color:var(--ink);background:var(--bg)}button,input,select{font:inherit}button{cursor:pointer;border:1px solid transparent;border-radius:10px;min-height:44px;font-weight:700;padding:.65rem .9rem;line-height:1.25;transition:background .15s,box-shadow .15s}button:disabled{cursor:not-allowed;opacity:.48}button:not(:disabled):active{transform:translateY(1px)}:focus-visible{outline:3px solid #cf8a00;outline-offset:3px}button,input,select{-webkit-tap-highlight-color:transparent}a{color:var(--accent);text-underline-offset:3px}h1,h2,h3,p{margin:0 0 1rem}h1{font-size:clamp(2.25rem,4vw,3.65rem);line-height:1.09;letter-spacing:-.045em}h2{font-size:1.4rem;line-height:1.3;letter-spacing:-.025em}h3{font-size:1.03rem;line-height:1.5}small,.help{font-size:.78rem;line-height:1.6}.help,.muted{color:var(--muted)}.eyebrow{font-size:.68rem;letter-spacing:.14em;font-weight:800;color:var(--accent);margin-bottom:.7rem}.primary{background:var(--accent);color:var(--on-accent)}.primary:hover:not(:disabled){filter:brightness(.92)}.secondary{background:var(--ink);color:var(--paper)}.quiet{background:var(--paper);border-color:var(--line);color:var(--ink)}.quiet:hover:not(:disabled){background:var(--soft)}.text-button{background:transparent;color:var(--muted);text-decoration:underline;text-underline-offset:4px;font-size:.78rem;padding:.4rem .2rem}.skip-link{position:fixed;top:5px;left:5px;transform:translateY(-160%);z-index:1000;background:var(--paper);padding:.7rem}.skip-link:focus{transform:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-header{max-width:1400px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.75rem;border-bottom:1px solid var(--line)}.brand{display:flex;gap:.75rem;align-items:center}.brand-mark{width:43px;height:43px;border-radius:13px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:1.75rem;font-weight:800;flex:none}.brand strong{display:block;letter-spacing:-.025em;font-size:1.14rem}.brand div>span{display:block;color:var(--muted);font-size:.71rem}.header-actions{display:flex;gap:.4rem;flex-wrap:wrap}.header-actions button{font-size:.76rem;min-height:40px;padding:.55rem .75rem}.main-wrap{max-width:1320px;margin:auto;padding:1.35rem 1.75rem 1.4rem}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.setup-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:1.5rem;align-items:stretch;max-width:1120px;margin:.8rem auto}.hero{background:#172d43;color:#fff;border-radius:22px;padding:2.4rem 2rem;overflow:hidden;display:flex;flex-direction:column;justify-content:center}.hero .eyebrow{color:#abdccc}.hero h1{margin:.3rem 0 1.25rem}.hero h1 span{color:#a9dfca}.hero-lead{font-size:1.02rem;color:#d6e4ef;line-height:1.75;max-width:390px}.hero-example{border:1px solid #486171;border-radius:14px;background:#203b51;padding:1.1rem;margin:1.3rem 0}.hero-example .mini-heading{font-size:.65rem;letter-spacing:.14em;color:#bad4e2;font-weight:800}.hero-machine{display:grid;grid-template-columns:1fr 25px 1fr;gap:.5rem;align-items:center;text-align:center;margin:1rem 0 .7rem}.hero-machine b{font-size:1.7rem}.hero-machine small{display:block;color:#c4d8e4;font-size:.72rem}.hero-machine .fraction-tile{background:#a9dfca;color:#172d43;border-radius:11px;padding:.7rem .25rem}.hero-machine .fraction-tile small{color:#274b5c}.hero-example p{margin:0;color:#cadce9;font-size:.79rem}.hero-footer{display:flex;flex-wrap:wrap;gap:.6rem 1rem;color:#c5d7e1;font-size:.73rem}.hero-footer span:before{content:'✓';margin-right:.35rem;color:#a9dfca}.setup-card{padding:2rem;display:flex;flex-direction:column;justify-content:center}.setup-card h2{font-size:1.65rem;margin-bottom:.8rem}.setup-lead{font-size:.96rem;color:var(--muted);line-height:1.7}.start-notes{display:grid;gap:1rem;margin:.7rem 0 1.25rem}.start-note{display:flex;align-items:flex-start;gap:.8rem}.note-icon{display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);border-radius:10px;min-width:35px;height:35px;font-size:.85rem;font-weight:800}.start-note strong{display:block;font-size:.9rem}.start-note p{font-size:.81rem;color:var(--muted);margin:.2rem 0 0;line-height:1.6}.start-button{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:1.03rem;padding:.95rem 1rem;margin-top:.7rem}.small-print{color:var(--muted);font-size:.71rem;line-height:1.7;margin:.8rem 0 0}.resume-card{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--soft);padding:1rem;border-radius:12px;max-width:1120px;margin:0 auto 1rem}.resume-card strong{font-size:.88rem}.resume-card p{font-size:.8rem;margin:.25rem 0 .6rem}.button-row{display:flex;gap:.6rem;flex-wrap:wrap}.button-row button{font-size:.8rem}.notice{padding:.8rem 1rem;border:1px solid var(--line);background:var(--soft);border-radius:10px;margin:.8rem 0;font-size:.84rem;line-height:1.6;overflow-wrap:anywhere}.notice.success{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}.notice.error{border-color:var(--error);color:var(--error);background:var(--paper)}.notice.warning{border-color:#ba944b;color:var(--warn)}
+.session-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}.session-title{display:flex;align-items:center;gap:.75rem;font-size:.88rem}.points-badge{background:var(--accent-soft);color:var(--accent);padding:.35rem .7rem;border-radius:99px;font-size:.8rem;font-weight:800;white-space:nowrap}.session-actions{display:flex;gap:.45rem;align-items:center}.session-actions button{font-size:.8rem;padding:.6rem .75rem}.question-grid{display:grid;grid-template-columns:minmax(0,1.72fr) minmax(290px,1fr);gap:1.05rem;align-items:start}.question-grid.with-calculator{grid-template-columns:minmax(0,1.4fr) minmax(265px,.9fr) minmax(245px,.78fr)}.question-paper{padding:1.45rem 1.65rem;min-height:410px;display:flex;flex-direction:column}.paper-top{display:flex;justify-content:space-between;align-items:center;gap:.8rem;margin-bottom:1.15rem}.paper-top h2{font-size:1.25rem;margin:0}.pill{display:inline-block;border:1px solid var(--line);color:var(--muted);background:var(--soft);border-radius:99px;font-size:.66rem;font-weight:750;padding:.25rem .6rem;white-space:nowrap}.question-text{font-family:Cambria,Georgia,serif;font-size:1.3rem;line-height:1.6;color:var(--ink)}.question-text p{margin:0 0 .85rem}.question-text b{font-weight:750;font-variant-numeric:tabular-nums}.question-text p:last-child{margin-bottom:.4rem}.question-guidance{font-size:.74rem;color:var(--muted);line-height:1.6;margin:.85rem 0 0}.paper-footer{border-top:1px solid var(--line);padding-top:.75rem;margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:.8rem;color:var(--muted);font-size:.71rem}.question-content{margin-bottom:1.2rem}.paper-footer button{font-size:.75rem;padding:.5rem .6rem}.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:11px;margin:1rem 0 .5rem}.data-table{border-collapse:collapse;width:100%;font-size:.88rem}.data-table th{background:var(--soft);font-size:.78rem;text-align:left;font-weight:750}.data-table th,.data-table td{padding:.65rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}.data-table tr:last-child td{border:0}.data-table td{font-variant-numeric:tabular-nums}.answer-panel{padding:1.35rem}.answer-panel h2{font-size:1.15rem;margin-bottom:.6rem}.answer-panel>.help{margin-bottom:1rem}.answer-item{margin:0 0 1rem;padding:0;border:0;min-width:0}.answer-item>label,.answer-item>legend{display:block;font-size:.88rem;font-weight:750;margin-bottom:.5rem;line-height:1.5}.number-shell{display:flex;align-items:center;border:1px solid var(--line);border-radius:11px;overflow:hidden;background:var(--paper)}.number-shell:focus-within{outline:3px solid #cf8a00;outline-offset:2px}.number-shell input{width:100%;min-width:0;border:0;border-radius:0;padding:.7rem .65rem;background:transparent;color:var(--ink);font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums;outline:none}.number-shell input:disabled{opacity:.7;background:var(--soft)}.answer-unit{font-size:.82rem;padding:0 .7rem;color:var(--muted);white-space:nowrap}.choice-options{display:grid;gap:.45rem}.choice-option{display:flex;align-items:center;gap:.65rem;min-height:43px;border:1px solid var(--line);padding:.55rem .7rem;border-radius:9px;cursor:pointer;font-size:.88rem;line-height:1.5}.choice-option:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}.choice-option:has(input:disabled){cursor:default}.choice-option input{accent-color:var(--accent);width:17px;height:17px;flex:none}.choice-option:focus-within{outline:3px solid #cf8a00;outline-offset:2px}.part-feedback{font-size:.78rem;line-height:1.6;margin-top:.4rem}.part-feedback.error{color:var(--error)}.part-feedback.good{color:var(--accent)}.check-button,.next-button{width:100%;padding:.8rem;margin:.2rem 0 .4rem}.answer-actions{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap}.answer-actions .quiet{font-size:.8rem}.hint-box{background:var(--soft);border-left:3px solid var(--accent);padding:.7rem .8rem;border-radius:7px;margin:.8rem 0;font-size:.86rem;line-height:1.65}.hint-box p{margin:0 0 .65rem}.hint-box p:last-child{margin:0}.solution-toggle{width:100%;text-align:left;margin-top:.7rem}.solution-box{padding-top:.8rem;border-top:1px solid var(--line);margin-top:.75rem;font-size:.86rem;line-height:1.65}.solution-box p{margin:0 0 .75rem}.solution-box h3{font-size:.9rem;margin-bottom:.6rem}.session-note{font-size:.7rem;color:var(--muted);text-align:right;margin:.8rem 0 0}.calculation-heading{display:flex;align-items:center;justify-content:space-between;gap:.7rem;margin-bottom:.8rem}.calculation-heading h2{margin:0;font-size:1rem}.calculation-heading button{min-height:32px;width:32px;padding:.25rem;font-size:.8rem}.calculator{padding:1rem}.calc-expression{width:100%;padding:.7rem .65rem;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:9px;font-size:1.07rem;font-variant-numeric:tabular-nums;text-align:right}.calc-output{display:block;font-size:1.6rem;font-weight:750;min-height:45px;text-align:right;padding:.3rem .3rem .1rem;overflow-wrap:anywhere;line-height:1.3;font-variant-numeric:tabular-nums}.calc-status{font-size:.68rem;color:var(--muted);min-height:20px;margin:.3rem 0 .6rem;line-height:1.5}.calc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:.35rem}.calc-keys button{min-height:45px;padding:.4rem .2rem;background:var(--soft);color:var(--ink);border:1px solid var(--line);font-size:1.08rem}.calc-keys button.operator{background:var(--accent-soft);color:var(--accent)}.calc-keys button.equals{background:var(--accent);color:var(--on-accent)}.calc-keys button.clear{font-size:.8rem}.calc-target{margin:.8rem 0 .4rem}.calc-target label{font-size:.72rem;font-weight:700;display:block;margin-bottom:.3rem}.calc-target select{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;font-size:.75rem;padding:.5rem}.calc-transfer{width:100%;margin:.7rem 0 .25rem;font-size:.8rem;padding:.6rem}.calculator>.help{font-size:.67rem;margin:.6rem 0 0}.calculator .error{color:var(--error)}
+.bridge-panel{max-width:940px;margin:.25rem auto;padding:1.8rem 2rem}.bridge-panel h2{font-size:1.8rem}.bridge-intro{max-width:660px;line-height:1.7}.bridge-intro p{margin-bottom:.7rem}.multiplier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.3rem 0}.multiplier-card{border:1px solid var(--line);border-radius:13px;background:var(--soft);padding:1rem}.multiplier-card strong{display:block;font-size:.94rem}.multiplier-card .equation{font-size:1.24rem;font-weight:800;color:var(--accent);margin:.65rem 0}.multiplier-card p{font-size:.82rem;line-height:1.65;margin-bottom:.35rem}.bridge-footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding-top:1rem}.bridge-footer p{font-size:.82rem;color:var(--muted);margin:0;max-width:570px}.bridge-footer button{white-space:nowrap}.mini-method{padding:.8rem 1rem;background:var(--soft);border-radius:10px;font-size:.88rem;line-height:1.75;margin:.9rem 0}.method-step{display:flex;gap:.8rem;border-bottom:1px solid var(--line);padding:.75rem 0;font-size:.94rem;line-height:1.7}.method-step span{display:grid;place-items:center;align-self:flex-start;min-width:27px;height:27px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:.74rem;margin-top:.15rem}.method-step p{margin:0!important;font-size:.92rem!important}.method-toggle{margin:.75rem 0 0}.reason-box{border-left:3px solid var(--accent);padding-left:.8rem;color:var(--muted);font-size:.85rem;margin:1rem 0}.bar-sample{display:grid;grid-template-columns:repeat(10,1fr);height:30px;gap:3px;margin:.8rem 0;max-width:360px}.bar-sample i{background:var(--line);border-radius:3px}.bar-sample i.filled{background:var(--accent)}
+.results-header{padding:.5rem 0 1rem}.results-header h1{font-size:2.6rem;margin-bottom:.6rem}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}.metric{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.05rem}.metric b{display:block;font-size:1.9rem;letter-spacing:-.035em;font-variant-numeric:tabular-nums}.metric span{font-size:.75rem;color:var(--muted)}.results-toolbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.1rem 0}.results-toolbar button{font-size:.82rem}.review-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:.7rem 0;overflow:hidden}.review-card summary{display:flex;justify-content:space-between;gap:1rem;padding:1rem;cursor:pointer;font-size:.87rem;font-weight:750}.review-card summary>span:first-child:before{content:'+';margin-right:.7rem;color:var(--accent)}.review-card[open] summary>span:first-child:before{content:'−'}.review-status{font-size:.75rem;font-weight:650;color:var(--muted)}.review-body{padding:.1rem 1.15rem 1rem}.review-body .question-text{font-size:1.1rem}.review-part{border-top:1px solid var(--line);padding:.65rem 0;font-size:.84rem;line-height:1.7}.review-part p{margin:.15rem 0}.review-part .correct{color:var(--accent);font-weight:750}.review-method{border-top:1px solid var(--line);margin-top:.5rem;padding-top:.7rem}.review-method p{font-size:.85rem;margin:.45rem 0;line-height:1.65}.site-footer{max-width:1320px;margin:auto;padding:.9rem 1.75rem 1.1rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;font-size:.68rem;color:var(--muted);line-height:1.6}.toast{position:fixed;bottom:1.25rem;left:50%;transform:translateX(-50%);z-index:1000;background:var(--ink);color:var(--paper);border-radius:10px;box-shadow:var(--shadow);padding:.7rem 1rem;font-size:.85rem;max-width:min(600px,90vw);text-align:center;pointer-events:none}.toast:empty{display:none}
+dialog{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:0;box-shadow:0 24px 100px #0004;max-height:90dvh;overflow:auto;width:calc(100% - 2rem);max-width:900px}dialog::backdrop{background:#132738b8;backdrop-filter:blur(3px)}.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.4rem;border-bottom:1px solid var(--line)}.dialog-heading h2{font-size:1.2rem;margin:0}.close-button{background:var(--soft);color:var(--ink);border:1px solid var(--line);width:38px;min-height:38px;padding:.3rem;flex:none}.dialog-body{padding:1.2rem 1.4rem}.dialog-body p{font-size:.89rem;line-height:1.75}.dialog-body h3{margin:1.15rem 0 .55rem}.dialog-body h3:first-child{margin-top:0}.small-dialog{max-width:470px}.method-dialog{max-width:700px}.tab-row{display:flex;gap:.5rem;border-bottom:1px solid var(--line);padding:.8rem 1.4rem}.tab-row button{font-size:.78rem;background:var(--soft);color:var(--muted);border-color:var(--line)}.tab-row button[aria-selected=true]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}.teacher-note{font-size:.8rem;color:var(--muted);margin-bottom:.8rem}.teacher-table td,.teacher-table th{font-size:.76rem;line-height:1.6}.teacher-table td:first-child{min-width:170px}.source-list p{border-top:1px solid var(--line);padding:.8rem 0;margin:0;font-size:.82rem}.key-data{font: .73rem/1.6 ui-monospace,monospace;overflow-wrap:anywhere;background:var(--soft);padding:.7rem;border-radius:8px}.field{margin:.8rem 0}.field label{display:block;font-size:.84rem;font-weight:750;margin-bottom:.4rem}.field select{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:.6rem;border-radius:8px}
+body[data-theme=dark]{--ink:#e4eef7;--muted:#b1c2d1;--paper:#1b2d3e;--bg:#12212f;--soft:#233c50;--line:#3c5265;--accent:#8edfc8;--accent-soft:#24483f;--on-accent:#112d28;--error:#ff9ea8;--warn:#f1cd91;--shadow:0 9px 30px #0001;color-scheme:dark}body[data-theme=dark] .hero{border:1px solid var(--line)}body[data-theme=dark] .primary:hover{filter:brightness(1.1)}body[data-size=large] .question-text{font-size:1.5rem}body[data-size=large] .answer-item>label,body[data-size=large] .answer-item>legend{font-size:1rem}
+@media(min-width:1450px){.main-wrap{padding-top:1.8rem}.question-paper{min-height:460px}.question-text{font-size:1.43rem}.setup-grid{margin:1.5rem auto}.setup-card,.hero{padding:2.5rem}}
+@media(max-width:1150px){.question-grid.with-calculator{grid-template-columns:minmax(0,1.35fr) minmax(225px,.85fr) minmax(220px,.8fr)}.question-paper{padding:1.2rem}.answer-panel{padding:1.1rem}.main-wrap{padding:1.1rem 1.25rem}.site-header{padding:.9rem 1.25rem}.question-text{font-size:1.17rem}.with-calculator .question-text{font-size:1.13rem}.data-table th,.data-table td{padding:.55rem}.setup-card{padding:1.6rem}.hero{padding:1.9rem 1.7rem}.hero h1{font-size:2.9rem}.paper-top{flex-wrap:wrap;gap:.45rem}}
+@media(max-width:920px){.question-grid.with-calculator{grid-template-columns:minmax(0,1.2fr) minmax(270px,1fr)}.with-calculator .question-paper{grid-column:1/-1;min-height:0}.with-calculator .question-text{font-size:1.2rem}.calculator{grid-column:2;grid-row:2}.with-calculator .answer-panel{grid-row:2}.setup-grid{gap:1rem}.hero h1{font-size:2.5rem}.hero{padding:1.5rem}.setup-card{padding:1.4rem}.multiplier-grid{gap:.6rem}.bridge-panel{padding:1.4rem}.bridge-footer{align-items:flex-start}}
+@media(max-width:700px){.site-header{flex-wrap:wrap;gap:.65rem;padding:.85rem 1rem}.header-actions{margin-left:auto}.header-actions button{font-size:.69rem;min-height:36px;padding:.45rem .6rem}.brand div>span{font-size:.66rem}.main-wrap{padding:1rem .8rem 1.3rem}.setup-grid{grid-template-columns:1fr;margin:0}.hero h1{font-size:2.5rem;margin:.2rem 0 .75rem}.hero h1 br{display:none}.hero-lead{max-width:none;font-size:.92rem;margin-bottom:.75rem}.hero-example{display:none}.hero-footer{font-size:.7rem}.setup-card{padding:1.4rem}.setup-card h2{font-size:1.5rem}.question-grid,.question-grid.with-calculator{grid-template-columns:1fr}.question-paper{min-height:0;padding:1.2rem}.question-text,.with-calculator .question-text{font-size:1.23rem}.question-content{margin-bottom:.9rem}.question-grid .answer-panel,.question-grid .calculator{grid-column:1;grid-row:auto}.session-title{gap:.35rem;align-items:flex-start;flex-direction:column}.session-title>span:first-child{font-size:.79rem}.session-actions{gap:.35rem}.session-actions button{font-size:.7rem;padding:.5rem .55rem}.session-bar{align-items:center;gap:.5rem}.answer-panel{padding:1.2rem}.points-badge{font-size:.69rem}.paper-top{flex-wrap:nowrap}.paper-top h2{font-size:1.13rem}.pill{font-size:.61rem}.session-note{text-align:left}.metrics{grid-template-columns:repeat(2,1fr)}.results-header h1{font-size:2.1rem}.site-footer{flex-direction:column;gap:.3rem;padding:1rem}.multiplier-grid{grid-template-columns:1fr}.multiplier-card{display:grid;grid-template-columns:1fr 1fr;gap:.2rem .8rem;padding:.9rem}.multiplier-card strong{grid-column:1}.multiplier-card .equation{grid-column:2;grid-row:1/3;margin:0;align-self:center;font-size:1.2rem}.multiplier-card p{font-size:.77rem;grid-column:1}.bridge-footer{flex-direction:column;gap:.8rem}.bridge-footer button{width:100%}.bridge-panel h2{font-size:1.5rem}.bridge-panel{padding:1.15rem}.dialog-heading,.dialog-body{padding:1rem}.tab-row{padding:.7rem 1rem;gap:.35rem;flex-wrap:wrap}.tab-row button{font-size:.7rem;padding:.5rem .6rem}.review-card summary{font-size:.8rem;gap:.6rem}.review-status{font-size:.68rem}.calc-keys button{min-height:49px}.calculator{max-width:420px;width:100%;justify-self:center}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{header,.site-footer,.results-toolbar,button,dialog,.toast,.session-note,.session-bar{display:none!important}body{background:#fff;color:#111}.main-wrap{max-width:none;padding:0}.panel,.metric,.review-card{box-shadow:none;border-color:#aaa;border-radius:0;break-inside:avoid;background:#fff;color:#111}.review-body{display:block!important}.review-card summary{color:#111}.review-status,.help,.muted{color:#333}.question-grid{display:block}.results-header h1{font-size:22pt}.metrics{gap:.4rem}.metric b{font-size:18pt}#calculatorPanel{display:none!important}.question-text{font-size:12pt}.review-body .question-text{font-size:12pt}}
+</style>
+</head>
+<body data-theme="light" data-size="normal">
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+ <div class="brand"><span class="brand-mark" aria-hidden="true">%</span><div><strong>Percentages Studio</strong><span>Functional Skills Mathematics · Pearson Edexcel Level 1</span></div></div>
+ <nav class="header-actions" aria-label="Display and teacher tools"><button class="quiet" id="themeBtn" aria-pressed="false">Dark mode</button><button class="quiet" id="textBtn" aria-pressed="false">Larger text</button><button class="quiet" id="fullBtn">Full screen</button><button class="quiet" id="teacherBtn">Teacher view</button></nav>
+</header>
+<main id="main" class="main-wrap">
+ <div id="storageNotice" class="notice warning" role="status" hidden></div>
+ <section id="setupView" aria-labelledby="setupTitle">
+  <div id="resumeCard" class="resume-card" hidden><strong id="resumeTitle">A session is saved on this device</strong><p id="resumeInfo"></p><div class="button-row"><button class="primary" id="resumeBtn">Continue saved session</button><button class="quiet" id="discardBtn">Clear saved session</button></div></div>
+  <div class="setup-grid">
+   <div class="hero">
+    <p class="eyebrow">READ THE QUESTION. CHOOSE YOUR METHOD.</p>
+    <h1 id="setupTitle">Make sense<br>of <span>percentages.</span></h1>
+    <p class="hero-lead">The amount saved or the price paid?<br>A little extra or the new total?<br>Learn to spot what you really need to find.</p>
+    <div class="hero-example"><div class="mini-heading">START WITH A FAMILIAR IDEA</div><div class="hero-machine"><div class="fraction-tile"><b>50%</b><small>of an amount</small></div><span aria-hidden="true">→</span><div><b>½</b><small>of that amount</small></div></div><p>A percentage is a way of describing part of a whole.</p></div>
+    <div class="hero-footer"><span>One question at a time</span><span>Fresh numbers each session</span></div>
+   </div>
+   <div class="setup-card panel">
+    <p class="eyebrow">YOUR PRACTICE SESSION</p><h2>Start with what you know.</h2><p class="setup-lead">Take your time.<br>Use paper for your working and enter your final answers here.</p>
+    <div class="start-notes">
+     <div class="start-note"><span class="note-icon" aria-hidden="true">01</span><div><strong>Six gentle questions first</strong><p>Find simple percentages without a calculator.</p></div></div>
+     <div class="start-note"><span class="note-icon" aria-hidden="true">02</span><div><strong>A calculator, built in</strong><p>After the first six questions, learn a quick multiplier method and use the on-screen calculator.</p></div></div>
+     <div class="start-note"><span class="note-icon" aria-hidden="true">03</span><div><strong>Practice that responds to you</strong><p>Build confidence with extra practice, or move on to more demanding questions as your answers become secure.</p></div></div>
+    </div>
+    <button id="startBtn" class="primary start-button">Start <span aria-hidden="true">→</span></button>
+    <p class="small-print">No timer, no account and no phone needed.<br>Independent practice, not an official Pearson assessment.</p>
+   </div>
+  </div>
+ </section>
+ <section id="bridgeView" hidden aria-labelledby="bridgeTitle">
+  <div class="bridge-panel panel"><p class="eyebrow">A QUICK CALCULATOR METHOD</p><h2 id="bridgeTitle" tabindex="-1">Keep the whole in mind.</h2>
+   <div class="bridge-intro"><p>The original amount is <strong>100%</strong>.<br>A <strong>multiplier</strong> is the decimal you multiply the original amount by.</p><p>These three examples all start with £80, but they ask for different things.</p></div>
+   <div class="multiplier-grid">
+    <div class="multiplier-card"><strong>Find 20% of £80</strong><p>20 ÷ 100 = 0.20</p><div class="equation">80 × 0.20 = 16</div><p>The part is <b>£16</b>.</p></div>
+    <div class="multiplier-card"><strong>Increase £80 by 20%</strong><p>100% + 20% = 120%</p><div class="equation">80 × 1.20 = 96</div><p>The new total is <b>£96</b>.</p></div>
+    <div class="multiplier-card"><strong>Decrease £80 by 20%</strong><p>100% − 20% = 80%</p><div class="equation">80 × 0.80 = 64</div><p>The amount left is <b>£64</b>.</p></div>
+   </div>
+   <div class="mini-method">For an increase: 120 ÷ 100 = <b>1.20</b>.<br>For a decrease: 80 ÷ 100 = <b>0.80</b>.<br>0.20 and 0.2 mean the same thing.</div>
+   <div class="bridge-footer"><p>The calculator is now available.<br>You can still find the percentage first, then add or subtract it.<br>Both methods are welcome.</p><button id="bridgeBtn" class="primary">Try it →</button></div>
+  </div>
+ </section>
+ <section id="sessionView" hidden aria-labelledby="questionHeading">
+  <div class="session-bar"><div class="session-title"><span>Your practice</span><span id="points" class="points-badge">0 points</span></div><div class="session-actions"><button class="quiet" id="calcBtn" aria-expanded="false" aria-controls="calculatorPanel" disabled>Calculator locked</button><button class="quiet" id="finishBtn">Finish & review</button></div></div>
+  <div id="questionGrid" class="question-grid">
+   <article class="question-paper panel"><div class="paper-top"><h2 id="questionHeading" tabindex="-1">Question 1</h2><span class="pill" id="calculationStyle">Without a calculator</span></div><div class="question-content"><div id="questionText" class="question-text"></div><div id="questionTable"></div><p id="questionGuidance" class="question-guidance"></p></div><div class="paper-footer"><span>Do your working on paper.</span><button class="quiet" id="exampleBtn">See a different example</button></div></article>
+   <aside class="answer-panel panel" aria-labelledby="answerHeading"><h2 id="answerHeading">Your answer</h2><p class="help" id="answerInstructions">Enter your final answer.</p>
+    <form id="answerForm" novalidate><div id="answerFields"></div><div id="checkMessage" class="notice" role="status" aria-live="polite" hidden></div><button type="submit" class="primary check-button" id="checkBtn">Check answer</button></form>
+    <button class="secondary next-button" id="nextBtn" hidden>Next question →</button>
+    <div class="answer-actions" id="answerActions"><button class="quiet" id="hintBtn">A hint</button><button class="text-button" id="revealBtn" disabled>Show solution</button></div>
+    <div id="hintBox" class="hint-box" aria-live="polite" hidden></div><p id="revealHelp" class="help small-print">Try an answer or read both hints before showing the solution.</p>
+    <button id="solutionBtn" class="quiet solution-toggle" aria-expanded="false" aria-controls="solutionBox" hidden>View worked solution</button><div class="solution-box" id="solutionBox" hidden></div>
+   </aside>
+   <aside class="calculator panel" id="calculatorPanel" hidden aria-labelledby="calculatorHeading"><div class="calculation-heading"><h2 id="calculatorHeading">Calculator</h2><button class="quiet" id="calcClose" aria-label="Close calculator">✕</button></div>
+    <label for="calcExpression" class="sr-only">Calculation</label><input id="calcExpression" class="calc-expression" inputmode="decimal" autocomplete="off" spellcheck="false" maxlength="160" placeholder="e.g. 80 × 0.2" aria-describedby="calcStatus"><output id="calcOutput" class="calc-output" aria-live="polite">0</output><p id="calcStatus" class="calc-status">Enter a calculation, then press =.</p>
+    <div class="calc-keys" aria-label="Calculator keys">
+     <button type="button" data-calc="AC" class="clear">AC</button><button type="button" data-calc="DEL" class="clear" aria-label="Delete last character">⌫</button><button type="button" data-calc="(" class="operator" aria-label="Open bracket">(</button><button type="button" data-calc=")" class="operator" aria-label="Close bracket">)</button>
+     <button type="button" data-calc="7">7</button><button type="button" data-calc="8">8</button><button type="button" data-calc="9">9</button><button type="button" data-calc="÷" class="operator" aria-label="Divide">÷</button>
+     <button type="button" data-calc="4">4</button><button type="button" data-calc="5">5</button><button type="button" data-calc="6">6</button><button type="button" data-calc="×" class="operator" aria-label="Multiply">×</button>
+     <button type="button" data-calc="1">1</button><button type="button" data-calc="2">2</button><button type="button" data-calc="3">3</button><button type="button" data-calc="−" class="operator" aria-label="Subtract">−</button>
+     <button type="button" data-calc="0">0</button><button type="button" data-calc="." aria-label="Decimal point">.</button><button type="button" data-calc="=" class="equals" aria-label="Equals">=</button><button type="button" data-calc="+" class="operator" aria-label="Add">+</button>
+    </div>
+    <div id="calcTargetWrap" class="calc-target" hidden><label for="calcTarget">Put result in</label><select id="calcTarget"></select></div><button id="calcUse" class="quiet calc-transfer" disabled>Use this result</button><p class="help">× and ÷ are calculated before + and −.<br>Brackets are supported.<br>The calculator does not choose a method for you.</p>
+   </aside>
+  </div><p id="saveStatus" class="session-note">Progress is saved in this browser when storage is available.</p>
+ </section>
+ <section id="resultsView" hidden aria-labelledby="resultsHeading"><div class="results-header"><p class="eyebrow">PRACTICE REVIEW</p><h1 id="resultsHeading" tabindex="-1">See what you have learned.</h1><p id="resultsSubtitle" class="muted"></p></div><div id="resultMetrics" class="metrics"></div><div class="results-toolbar"><button class="primary" id="againBtn">New practice</button><button class="quiet" id="csvBtn">Export results</button><button class="quiet" id="copyBtn">Copy summary</button><button class="quiet" id="printBtn">Print review</button></div><p class="notice">These are practice points, not exam marks or a predicted result.<br>Final answers are checked exactly; your paper working is not automatically marked.</p><h2>Your questions</h2><div id="reviewList"></div></section>
+</main>
+<footer class="site-footer"><span>Independent Level 1 percentage practice · Not endorsed by Pearson</span><span>One HTML file · No accounts · No external libraries</span></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="exampleDialog" class="method-dialog" aria-labelledby="exampleHeading"><div class="dialog-heading"><h2 id="exampleHeading">A different worked example</h2><button class="close-button" data-close="exampleDialog" aria-label="Close worked example">✕</button></div><div class="dialog-body"><p class="teacher-note">Different numbers from your current question.<br>Using this example is recorded as support, not as independent mastery.</p><div id="exampleBody"></div></div></dialog>
+<dialog id="teacherDialog" aria-labelledby="teacherHeading"><div class="dialog-heading"><h2 id="teacherHeading">Teacher view</h2><button class="close-button" data-close="teacherDialog" aria-label="Close teacher view">✕</button></div><div class="tab-row" role="tablist" aria-label="Teacher information"><button id="progressTab" role="tab" aria-selected="true" aria-controls="teacherProgress">Learning record</button><button id="notesTab" role="tab" aria-selected="false" aria-controls="teacherNotes" tabindex="-1">Scope & teaching notes</button><button id="sourcesTab" role="tab" aria-selected="false" aria-controls="teacherSources" tabindex="-1">Sources & privacy</button></div><div class="dialog-body">
+ <section id="teacherProgress" role="tabpanel" aria-labelledby="progressTab"><div id="teacherSummary"></div></section>
+ <section id="teacherNotes" role="tabpanel" aria-labelledby="notesTab" hidden>
+  <h3>Deliberate Level 1 boundary</h3><p>This independent trainer focuses on Pearson Edexcel Level 1 content 14, supported by decimal equivalence in content 16 and discount calculations in content 19.<br>All stated percentage rates are multiples of 5%.<br>Money and measurement calculations produce exact whole numbers or terminating decimals with at most two decimal places.<br>Counts of people or items always have whole-number answers.</p>
+  <p>Challenge comes from distinguishing a change amount from a final total, selecting data from tables, comparing offers and carrying out straightforward connected steps.<br>There are no reverse percentages, unknown percentage-change calculations, compound interest, repeated percentage changes or algebraic growth formulae.<br>Simple interest is Level 1 content, but is deliberately outside this focused percentage trainer.</p>
+  <h3>What changes adaptively</h3><p>There are separate learning records for finding the percentage amount, finding an increased total and finding a reduced or remaining total.<br>Three consecutive independent successes at the current working level move that skill to more demanding wording or connected steps.<br>Two supported or unsuccessful outcomes in the last three current-level checks move it back for consolidation.<br>Related questions return after a correction or support.<br>A skill that has not appeared in the previous six questions is prioritised.<br>Occasional easier questions revisit secure skills without counting towards promotion.</p>
+  <p>The first six questions are gentle non-calculator percentage amounts.<br>A struggling learner gets more halves and tenths rather than being pushed through a fixed increase in difficulty.<br>After those six, the integrated calculator becomes available for everyone and a short explanation introduces multipliers.<br>Calculator use is never treated as a weakness in the calculator-allowed questions.<br>Speed does not affect adaptation.</p>
+  <h3>Support and points</h3><p>10 points: a whole question correct on the first check without a hint or example.<br>5 points: correct after a retry without other support.<br>3 points: correct with a hint or example.<br>0 points: solution revealed or question unfinished.<br>Correct parts remain locked when another part needs a retry.<br>Partial successes are included in the detailed review, but a whole-question point award requires all parts to be correct.</p>
+  <p>Answers are marked exactly, not with the ±£1 / ±1 tolerance in the supplied GCSE template.<br>For example, 18, 18.0 and 18.00 are equivalent.<br>An incorrect value one penny away is not evidence of mastery.<br>This is answer checking for practice, not a reproduction of Pearson's method-mark scheme.<br>Teacher review of paper working is still needed.</p>
+  <h3>What this is not</h3><p>This is a focused adaptive practice tool, not a complete examination simulator, an official Pearson resource or a validated prediction of exam readiness.<br>The six-question start is a teaching choice, not the structure or weighting of a Pearson examination.<br>Multiplier prompts and the help tools are teaching scaffolds, not a claim that every prompt reproduces an exam question format.</p>
+ </section>
+ <section id="teacherSources" role="tabpanel" aria-labelledby="sourcesTab" hidden>
+  <h3>Official sources checked for this build</h3><div class="source-list"><p><a href="https://qualifications.pearson.com/content/dam/pdf/Functional-skills/Mathematics/2019/specification-and-sample-assessments/pearson-edexcel-functional-skills-in-maths-spec-l1-l2.pdf" target="_blank" rel="noopener noreferrer">Pearson Edexcel Functional Skills Mathematics specification, Levels 1 and 2</a><br>Issue 1, June 2019, linked from Pearson's live qualification page when checked on 5 October 2026.<br>Printed pages 10–11: Level 1 content 11–14, 16 and 19.<br>Printed page 12: straightforward problems and connected steps.<br>Printed pages 14–15 distinguish reverse percentages and compound interest in Level 2.</p><p><a href="https://qualifications.pearson.com/en/qualifications/edexcel-functional-skills/maths-2019.html" target="_blank" rel="noopener noreferrer">Pearson's Functional Skills Mathematics qualification page</a><br>Level 1 qualification number: 603/4267/5.<br>The questions in this app are original and are not copied from Pearson papers.</p></div>
+  <h3>Saving on a shared device</h3><p>This app makes no network requests for practice and has no analytics or accounts.<br>It stores one session and display preferences in this browser only.<br>No student name or identifier is requested.<br>Clear the saved session before a different student uses the same browser.<br>Browser restrictions, private mode and local-file settings may prevent saving.<br>Export the review before clearing or replacing a session.</p><p>External source links need an internet connection.<br>The app, calculator and question generation work offline once this HTML file is available.<br>Teacher view is an optional view, not a password-protected assessment-security feature.</p><div class="key-data" id="buildInfo"></div>
+ </section>
+</div></dialog>
+<dialog id="confirmDialog" class="small-dialog" aria-labelledby="confirmHeading"><div class="dialog-heading"><h2 id="confirmHeading">Continue?</h2></div><div class="dialog-body"><p id="confirmText"></p><div class="button-row"><button class="quiet" id="confirmCancel">Cancel</button><button class="primary" id="confirmOK">Continue</button></div></div></dialog>
+<noscript><p class="notice warning">JavaScript must be enabled to use this practice app.</p></noscript>
+
+<script>
+/* Percentages Studio: Pearson Edexcel Functional Skills Level 1.
+   Independent practice resource. All questions are original.
+   Integer hundredths are used for questions and marking: no floating-point tolerance.
+   Copyright in Pearson's specification remains with Pearson. */
+(function(root){
+'use strict';
+const VERSION='fs1-2026.10.05-v1', LIMIT=500, CORE=['of','inc','dec'];
+const LABELS={of:'Finding the percentage amount',inc:'Finding the increased total',dec:'Finding the remaining / reduced total'};
+const NAMES=['Amira','Ben','Chloe','Daniel','Ellie','Faisal','Grace','Hassan','Isla','Jasmine','Kai','Liam','Maya','Noah','Olivia','Priya','Ruby','Sam','Tariq','Zara','Aisha','Lewis','Leah','Imran'];
+const ITEMS=['a waterproof jacket','a pair of work boots','a bicycle helmet','a backpack','a desk lamp','a tool kit','a camping tent','a pair of trainers','a coat','a suitcase','a folding table','a kitchen mixer'];
+function rng(seed){let s=seed>>>0;return ()=>{s=(s+0x6D2B79F5)>>>0;let t=s;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}
+function hash(a,b){let t=(a^Math.imul(b+1,0x9e3779b9))>>>0;t=Math.imul(t^t>>>16,0x85ebca6b);t=Math.imul(t^t>>>13,0xc2b2ae35);return (t^t>>>16)>>>0;}
+function shuffle(a,r){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function decimal(c){if(!Number.isSafeInteger(c))throw Error('Expected integer hundredths');return (c<0?'-':'')+Math.floor(Math.abs(c)/100)+'.'+String(Math.abs(c)%100).padStart(2,'0');}
+function short(c){return decimal(c).replace(/\.00$/,'').replace(/(\.\d)0$/,'$1');}
+function grouped(c,money=false){const [a,b]=decimal(c).split('.');return Number(a).toLocaleString('en-GB')+(money?'.'+b:b==='00'?'':'.'+b.replace(/0$/,''));}
+function show(c,u=''){return u==='£'?'£'+grouped(c,true):grouped(c)+(u?' '+u:'');}
+function pct(a,p){if(!Number.isSafeInteger(a)||!Number.isInteger(p)||p%5!==0||p<5||p>95||a*p%100)throw Error('Percentage does not terminate at two decimal places');return a*p/100;}
+function num(label,unit,answer,skill,recipe,integer=false){if(!Number.isSafeInteger(answer)||answer<0||(integer&&answer%100))throw Error('Invalid model answer');return {kind:'number',label,unit,answer,skill,recipe,integer};}
+function choice(label,texts,correct,skill,r){const options=shuffle(texts.map((text,id)=>({id:String(id),text})),r);return {kind:'choice',label,unit:'',options,correct:String(correct),skill};}
+function parse(raw,unit='',integer=false){
+ let s=String(raw??'').trim().replace(/−/g,'-');if(!s)return {ok:false,error:'Enter your answer first.'};
+ if(s.length>48)return {ok:false,error:'This entry is too long.'};
+ if(unit==='£')s=s.replace(/^£\s*/,'').replace(/\s*GBP$/i,'');
+ else if(unit)s=s.replace(new RegExp('\\s*'+unit.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'$','i'),'');
+ if(!/^[+\-]?(?:(?:\d{1,3}(?:,\d{3})+)|\d+|(?=\.\d))(?:\.\d*)?$/.test(s))return {ok:false,error:'Enter a number, not a calculation, and use the unit beside the box.'};
+ s=s.replace(/,/g,'');let sign=s.startsWith('-')?-1:1;s=s.replace(/^[+-]/,'');let [a='0',b='']=s.split('.');
+ if(b.length>2&&/[1-9]/.test(b.slice(2)))return {ok:false,error:'Use no more than two decimal places in this answer.'};
+ const value=sign*(Number(a||0)*100+Number((b+'00').slice(0,2)));
+ if(!Number.isSafeInteger(value)||Math.abs(value)>1e11)return {ok:false,error:'Check the size of this number.'};
+ if(value<0)return {ok:false,error:'This question needs a positive amount, not a negative number.'};
+ if(integer&&value%100)return {ok:false,error:'Use a whole number for a count of people or items.'};
+ return {ok:true,value:value||0};
+}
+function mark(raw,p){if(p.kind==='choice'){const valid=p.options.some(o=>o.id===String(raw));return {valid,correct:valid&&String(raw)===p.correct,error:valid?'':'Select one option.'};}const n=parse(raw,p.unit,p.integer);return n.ok?{valid:true,correct:n.value===p.answer,value:n.value,difference:n.value-p.answer}:{valid:false,error:n.error};}
+function valueOf(p){return p.kind==='choice'?p.options.find(x=>x.id===p.correct).text:show(p.answer,p.unit);}
+const POOLS={
+ of:[['direct','portion','charity','used'],['discount_amount','pay_extra','deposit','service_amount','portion','charity','used'],['table_portion','discount_amount','deposit','service_amount','pay_extra','used','charity'],['table_discount','deposit_delivery','charity_target','table_portion','discount_amount','pay_extra']],
+ inc:[['rise_price','extra_members','more_ingredients'],['rise_price','pay_total','service_total','extra_members','more_ingredients','extra_length'],['table_increase','service_total','pay_total','extra_length','more_ingredients','pair_increase'],['invoice_increase','table_increase','pair_increase','extra_order','inc_budget']],
+ dec:[['sale_price','stock_left','measure_left'],['sale_price','deposit_balance','stock_left','measure_left','budget_left','capacity_left'],['table_decrease','pair_discount','deposit_balance','budget_left','sale_price'],['compare_offers','sale_delivery','table_decrease','pair_discount','dec_budget']]
+};
+const ALL=new Set(['mental','bridge',...Object.values(POOLS).flat(2)]);
+function generate(key){
+ const {seed,family,level,calc,focus}=key;
+ if(!Number.isInteger(seed)||seed<0||seed>4294967295||!ALL.has(family)||![0,1,2,3].includes(level)||typeof calc!=='boolean'||!CORE.includes(focus))throw Error('Invalid question key');
+ if(!calc&&family!=='mental')throw Error('Only the six opening questions are non-calculator');
+ const r=rng(seed),pick=a=>a[Math.floor(r()*a.length)],int=(a,b)=>a+Math.floor(r()*(b-a+1));
+ const name=pick(NAMES),item=pick(ITEMS),v=int(0,2);
+ let p=pick(level===0?[10,20,25,50]:level===1?[5,10,15,20,25,30,40,50]:focus==='inc'?[5,10,15,20,25,30,35,40,45,50]:[5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95]);
+ let a=level===0?int(3,16)*2000:level===1?int(15,200)*100:int(100,1800)*20;
+ let unit='£', d=0, focusKind=focus, label='Your answer', parts=null, table=null, lines=[], specific=[], recipe=null;
+ const q={key:{...key},family,focus,level,calc,lines:[],parts:[],table:null,steps:[],hints:[],data:{},signature:''};
+ const make=(lab,u,ans,skill,rec,whole=false)=>num(lab,u,ans,skill,rec,whole);
+ const primary=(base,pc,kind,u=unit)=>({kind:'percentage',base,percent:pc,operation:kind,unit:u});
+ switch(family){
+ case 'mental':{
+  p=key.percent;a=int(2,12)*(p===50?200:p===10?1000:2000);unit=key.mentalVariant===2?'£':'';
+  if(key.mentalVariant===1){a=int(2,10)*2000;unit='people';lines=[`There are ${grouped(a)} people at an event.`,`${p}% arrive by bus.`,`How many people arrive by bus?`];}
+  else lines=[`Work out ${p}% of ${show(a,unit)}.`];break;
+ }
+ case 'bridge':{
+  p=pick([10,25,50]);a=int(3,14)*2000;
+  lines=[`${name} has ${show(a,'£')}.`,`${name} puts ${p}% of this money into savings.`,`Choose a multiplier, then work out how much money goes into savings.`];
+  parts=[choice('Multiplier for the money put into savings',[short(p),short(100+p),short(100-p===p?5:100-p),String(p)],0,'of',r),make('Money put into savings','£',pct(a,p),'of',primary(a,p,'of','£'))];break;
+ }
+ case 'direct': lines=[`Work out ${p}% of ${show(a,'£')}.`];break;
+ case 'portion':{
+  a=int(2,level===0?12:36)*2000;unit='people';const context=pick([['a college event','choose a vegetarian meal'],['a leisure centre','use the swimming pool'],['a training day','travel by bus']]);
+  lines=[`There are ${grouped(a)} people at ${context[0]}.`,`${p}% of these people ${context[1]}.`,`How many people ${context[1]}?`];break;
+ }
+ case 'charity':lines=[`${name} raises ${show(a,'£')} at a community sale.`,`${p}% of the money raised goes to a local charity.`,`How much money does the charity receive?`];break;
+ case 'used':{
+  a=int(4,level===0?15:75)*2000;unit=pick(['g','m','litres']);let material=unit==='g'?'flour':unit==='m'?'ribbon':'water';
+  lines=[`A workshop starts with ${show(a,unit)} of ${material}.`,`${p}% of this amount is used.`,`How much ${material} is used?`];break;
+ }
+ case 'discount_amount': lines=[`${name} buys ${item}.`,`The usual price is ${show(a,'£')}.`,`The shop takes ${p}% off this price.`,pick([`How much money does ${name} save?`,`Work out the amount of the discount.`,`How much is taken off the usual price?`])];break;
+ case 'pay_extra':{
+  p=pick([5,10,15,20]);a=int(18,60)*1000;
+  lines=[`${name} earns ${show(a,'£')} each week.`,`The weekly pay goes up by ${p}%.`,pick([`How much extra does ${name} earn each week?`,`Work out the amount added to the weekly pay.`,`By how many pounds does the weekly pay rise?`])];break;
+ }
+ case 'deposit': lines=[`${name} books ${pick(['a room for an event','a short course','a weekend trip'])} for ${show(a,'£')}.`,`A deposit of ${p}% of the full cost must be paid now.`,`How much must ${name} pay now?`];break;
+ case 'service_amount':{
+  p=pick([5,10,15,20]);lines=[`A meal costs ${show(a,'£')} before the service charge.`,`The service charge is ${p}% of the meal cost.`,`Work out the service charge only.`];break;
+ }
+ case 'rise_price': lines=[`The price of ${item} is ${show(a,'£')}.`,`The price goes up by ${p}%.`,pick([`What is the price after the rise?`,`How much does it cost now?`,`Work out the new price.`])];break;
+ case 'pay_total':{
+  p=pick([5,10,15,20]);a=int(18,60)*1000;
+  lines=[`${name} earns ${show(a,'£')} each week.`,`The weekly pay goes up by ${p}%.`,`What is the new weekly pay?`];break;
+ }
+ case 'service_total': p=pick([5,10,15,20]);lines=[`A meal costs ${show(a,'£')} before the service charge.`,`A service charge of ${p}% of the meal cost is added.`,`Work out the total bill.`];break;
+ case 'extra_members': a=int(2,25)*2000;unit='members';lines=[`A club has ${grouped(a)} members.`,`Membership rises by ${p}%.`,`How many members does the club have after the rise?`];break;
+ case 'more_ingredients': a=int(3,30)*2000;unit='g';lines=[`A bakery uses ${show(a,'g')} of flour for one batch.`,`A larger batch needs ${p}% more flour than this.`,`How much flour does the larger batch need?`];break;
+ case 'extra_length': a=int(4,90)*1000;unit='m';p=pick([5,10,15,20,25]);lines=[`${name} needs ${show(a,'m')} of cable for a job.`,`${name} buys ${p}% extra to allow for waste.`,`What total length of cable does ${name} buy?`];break;
+ case 'sale_price': lines=[`The usual price of ${item} is ${show(a,'£')}.`,`A sale offers ${p}% off the usual price.`,pick([`How much does ${name} pay in the sale?`,`Work out the price after the discount.`,`How much does it cost in the sale?`])];break;
+ case 'deposit_balance': lines=[`A course costs ${show(a,'£')} in total.`,`${name} has already paid a deposit of ${p}% of the total cost.`,`How much does ${name} still have to pay?`];break;
+ case 'stock_left':{
+  a=int(3,35)*2000;unit=pick(['tickets','plants','notebooks']);lines=[`A seller has ${grouped(a)} ${unit}.`,`${p}% of them are sold.`,`How many ${unit} are left?`];break;
+ }
+ case 'measure_left': a=int(3,40)*2000;unit=pick(['m','g','litres']);lines=[`A store has ${show(a,unit)} of ${unit==='m'?'rope':unit==='g'?'coffee beans':'paint'}.`,`${p}% of it is used.`,`How much is left?`];break;
+ case 'budget_left': a=int(8,70)*1000;lines=[`${name} has a budget of ${show(a,'£')}.`,`${name} spends ${p}% of this budget on materials.`,`How much of the budget is left?`];break;
+ case 'capacity_left': a=int(4,50)*2000;unit='litres';lines=[`A tank can hold ${show(a,'litres')} when full.`,`It is ${p}% full.`,`How many more litres are needed to fill the tank?`];break;
+ case 'table_portion':{
+  a=int(3,40)*2000;unit='people';p=pick([10,15,20,25,30,35,40,45,50]);let p2=pick([10,15,20,25]);let rows=shuffle([['Bus',p+'%'],['Car',p2+'%'],['Walk or cycle',(100-p-p2)+'%']],r);
+  table={headers:['Main way of travelling','Percentage of learners'],rows};lines=[`A college asks ${grouped(a)} learners how they usually travel.`,`Each learner chooses one main way of travelling.`,`The table shows the results.`,`How many learners choose Bus?`];break;
+ }
+ case 'table_discount':{
+  p=pick([10,15,20,25,30,35,40]);let b=int(80,600)*20,c=int(100,750)*20;
+  table={headers:['Item','Usual price','Discount'],rows:shuffle([['Work boots',show(a,'£'),p+'%'],['Backpack',show(b,'£'),pick([10,20,25])+'%'],['Jacket',show(c,'£'),pick([15,20,30])+'%']],r)};
+  lines=[`A shop lists its sale offers in the table.`,`${name} buys the work boots.`,`How much money does ${name} save on the work boots?`];break;
+ }
+ case 'table_increase': case 'table_decrease':{
+  const up=family==='table_increase';p=pick(up?[5,10,15,20,25]:[10,15,20,25,30,35,40]);
+  let b=int(100,1200)*20,c=int(100,1200)*20;
+  table={headers:['Course','Original fee'],rows:shuffle([['Photography',show(a,'£')],['Cookery',show(b,'£')],['Gardening',show(c,'£')]],r)};
+  lines=up?[`The table shows the original fees for three courses.`,`All these fees rise by ${p}%.`,`What is the new fee for Photography?`]:[`The table shows the original fees for three courses.`,`Members receive ${p}% off a course fee.`,`${name} is a member and books Photography.`,`How much does ${name} pay?`];break;
+ }
+ case 'pair_discount':{
+  d=pct(a,p);lines=[`The usual price of ${item} is ${show(a,'£')}.`,`The shop offers ${p}% off the usual price.`,`Work out both amounts below.`];
+  parts=[make('Money saved','£',d,'of',primary(a,p,'of','£')),make('Price paid in the sale','£',a-d,'dec',primary(a,p,'dec','£'))];break;
+ }
+ case 'pair_increase':{
+  a=int(20,65)*1000;p=pick([5,10,15,20]);d=pct(a,p);
+  lines=[`${name} earns ${show(a,'£')} each week.`,`The weekly pay rises by ${p}%.`,`Work out both amounts below.`];
+  parts=[make('Extra pay each week','£',d,'of',primary(a,p,'of','£')),make('New weekly pay','£',a+d,'inc',primary(a,p,'inc','£'))];break;
+ }
+ case 'invoice_increase':{
+  p=pick([5,10,15,20,25]);let b=int(100,900)*20,base=a+b;
+  table={headers:['Hire item','Hire charge'],rows:[['Tables',show(a,'£')],['Chairs',show(b,'£')]]};
+  lines=[`The table shows the charges for hiring tables and chairs.`,`A delivery charge of ${p}% of the combined hire charges is added.`,`Work out the total cost, including delivery.`];
+  parts=[make('Total cost','£',base+pct(base,p),'inc',{kind:'sumPercentage',a,b,percent:p,operation:'inc'})];specific=[`Combined hire charges = ${show(a,'£')} + ${show(b,'£')} = ${show(base,'£')}.`];a=base;break;
+ }
+ case 'extra_order':{
+  p=pick([5,10,15,20,25]);a=int(4,30)*2000;let b=int(2,12)*1000;unit='boxes';
+  lines=[`A business plans to order ${grouped(a)} boxes.`,`It increases this order by ${p}%.`,`A second department needs another ${grouped(b)} boxes as a separate order.`,`How many boxes are needed altogether?`];
+  parts=[make('Boxes altogether',unit,a+pct(a,p)+b,'inc',{kind:'percentageThenAdd',base:a,percent:p,operation:'inc',extra:b},true)];specific=[`Increase the first order before adding the separate ${grouped(b)} boxes.`];q.extra=b;break;
+ }
+ case 'compare_offers':{
+  p=pick([10,15,20,25,30,35,40]);a=int(6,35)*2000;d=pct(a,p);const fixed=d+pick([-500,-300,-200,0,200,300,500].filter(x=>d+x>0&&d+x<a));let oak=a-d,river=a-fixed,correct=oak<river?0:oak>river?1:2;
+  table={headers:['Shop','Offer on the usual price'],rows:[['Oak Store',p+'% off'],['River Shop',show(fixed,'£')+' off']]};
+  lines=[`Two shops sell the same ${item.replace(/^a |^an /,'')}.`,`The usual price at each shop is ${show(a,'£')}.`,`The table shows the offers.`,`There are no extra charges.`,`Which offer costs less, and what is the difference in price?`];
+  parts=[choice('Cheaper offer',['Oak Store','River Shop','The prices are equal'],correct,'dec',r),make('Difference in price','£',Math.abs(oak-river),'dec',{kind:'offerDifference',base:a,percent:p,fixed})];
+  specific=[`Oak Store: ${show(a,'£')} × ${short(100-p)} = ${show(oak,'£')}.`,`River Shop: ${show(a,'£')} − ${show(fixed,'£')} = ${show(river,'£')}.`,`The prices are ${correct===2?'equal':(correct===0?'lower at Oak Store':'lower at River Shop')}.`,`Difference = ${show(Math.abs(oak-river),'£')}.`];q.customSteps=true;break;
+ }
+ case 'sale_delivery':{
+  p=pick([10,15,20,25,30,35,40]);let fee=pick([250,350,400,450,500,600,750]);
+  lines=[`${name} buys ${item} online.`,`The usual item price is ${show(a,'£')}.`,`A voucher gives ${p}% off the item price only.`,`Delivery costs ${show(fee,'£')} and is not discounted.`,`How much does ${name} pay altogether?`];
+  parts=[make('Total paid','£',a-pct(a,p)+fee,'dec',{kind:'percentageThenAdd',base:a,percent:p,operation:'dec',extra:fee})];q.extra=fee;break;
+ }
+ case 'deposit_delivery':{
+  a=int(10,60)*1000;p=pick([10,15,20,25,30,40,50]);let fee=pick([500,750,1000,1500,2000]);
+  lines=[`The hire charge for some equipment is ${show(a,'£')}.`,`A deposit of ${p}% of the hire charge must be paid today.`,`A separate delivery charge of ${show(fee,'£')} must also be paid today.`,`How much must be paid today altogether?`];
+  parts=[make('Amount paid today','£',pct(a,p)+fee,'of',{kind:'percentageThenAdd',base:a,percent:p,operation:'of',extra:fee})];q.extra=fee;break;
+ }
+ case 'charity_target':{
+  a=int(10,80)*1000;p=pick([10,15,20,25,30,40,50]);d=pct(a,p);let target=Math.max(100,d+pick([-1000,-500,0,500,1000]));
+  lines=[`An event takes ${show(a,'£')} in ticket sales.`,`${p}% of the ticket money will be donated to a charity.`,`The organisers want to donate at least ${show(target,'£')}.`,`Work out the donation and decide whether the target is met.`];
+  parts=[make('Donation','£',d,'of',primary(a,p,'of','£')),choice('Is the donation at least the target?',['Yes','No'],d>=target?0:1,'of',r)];q.decision={amount:d,target,kind:'atLeast'};break;
+ }
+ case 'inc_budget': case 'dec_budget':{
+  const up=family==='inc_budget';p=pick([5,10,15,20,25,30]);a=int(10,60)*1000;let total=a+(up?1:-1)*pct(a,p),budget=total+pick([-500,-200,0,200,500]);
+  lines=up?[`The original cost of hiring a room is ${show(a,'£')}.`,`The cost rises by ${p}%.`,`${name} has a budget of ${show(budget,'£')}.`,`Work out the new cost and decide whether the budget is enough.`]:[`The usual price of ${item} is ${show(a,'£')}.`,`The shop offers ${p}% off.`,`${name} has ${show(budget,'£')} available to spend.`,`Work out the sale price and decide whether this money is enough.`];
+  parts=[make('Cost to pay','£',total,focus,primary(a,p,focus,'£')),choice('Is the available money enough?',['Yes','No'],budget>=total?0:1,focus,r)];q.decision={amount:total,target:budget,kind:'atMost'};break;
+ }
+ default:throw Error('Unknown question family');
+ }
+ d=pct(a,p);let answer=focusKind==='inc'?a+d:focusKind==='dec'?a-d:d;
+ if(!parts)parts=[make(label,unit,answer,focusKind,primary(a,p,focusKind,unit),['people','members','tickets','plants','notebooks','boxes'].includes(unit))];
+ q.lines=lines;q.parts=parts;q.table=table;q.data={base:a,percent:p,unit,operation:focusKind,change:d};
+ if(q.customSteps)q.steps=specific;
+ else if(!calc){q.steps=mentalSteps(a,p,unit);}
+ else{
+  const combined=family==='pair_discount'||family==='pair_increase';
+  const multiplier=focusKind==='inc'?100+p:focusKind==='dec'?100-p:p;
+  q.steps=[...specific];
+  if(combined){q.steps.push(`${p}% as a decimal is ${short(p)}.`,`${show(a,unit)} × ${short(p)} = ${show(d,unit)}.`);}
+  q.steps.push(focusKind==='of'?`The question needs the ${p}% part, not the whole amount.`:focusKind==='inc'?`The whole is 100%, so the new total is 100% + ${p}% = ${100+p}%.`:`The whole is 100%, so the amount remaining is 100% − ${p}% = ${100-p}%.`);
+  q.steps.push(`Multiplier: ${multiplier} ÷ 100 = ${short(multiplier)}.`,`${show(a,unit)} × ${short(multiplier)} = ${show(answer,unit)}.`);
+  if(q.extra!==undefined)q.steps.push(`Then add the separate amount: ${show(answer,unit)} + ${show(q.extra,unit)} = ${show(answer+q.extra,unit)}.`);
+  if(q.decision){const z=q.decision;let ok=z.kind==='atLeast'?z.amount>=z.target:z.amount<=z.target;q.steps.push(z.kind==='atLeast'?`${show(z.amount,'£')} is ${ok?'at least':'less than'} ${show(z.target,'£')}, so ${ok?'the target is met':'the target is not met'}.`:`${show(z.amount,'£')} is ${ok?'no more than':'more than'} the ${show(z.target,'£')} available, so ${ok?'there is enough money':'there is not enough money'}.`);}
+  q.steps.push('Finding the percentage first and then adding or subtracting is also a valid method.');
+ }
+ q.hints=[
+  !calc?'Remember that the full amount represents 100%.':family==='compare_offers'?'Work out the actual price at each shop before comparing the offers.':'Read the last sentence carefully: do you need the part, the new total, or what remains?',
+  !calc?mentalHint(p):family==='compare_offers'?`At Oak Store, ${100-p}% of the usual price remains after the offer.`:focusKind==='of'?`Find ${p}% of the original ${show(a,unit)}; this is the part requested${q.extra!==undefined?', then include the separate charge':''}.`:focusKind==='inc'?`Keep the original 100% and add ${p}%; use ${100+p}% of ${show(a,unit)}${q.extra!==undefined?', then include the separate amount':''}.`:`Keep 100% − ${p}% = ${100-p}% of ${show(a,unit)}${q.extra!==undefined?', then include the separate charge':''}.`
+ ];
+ if(family==='invoice_increase'){q.hints[0]='Add the two hire charges to find the amount that the percentage applies to.';q.hints[1]=`Include the original combined hire charges and another ${p}% for delivery.`;}
+ q.signature=JSON.stringify({family,lines,table,models:parts.map(x=>x.kind==='number'?x.answer:x.correct)});
+ if(!q.lines.length||!q.parts.length||q.parts.length>2||q.lines.some(t=>/undefined|NaN|Infinity/.test(t)))throw Error('Invalid generated question');
+ return q;
+}
+function mentalHint(p){return p===50?'50% means one half: divide the amount by 2.':p===25?'25% means one quarter: divide the amount by 4.':p===10?'10% means one tenth: divide the amount by 10.':p===20?'Find 10%, then double it to make 20%.':p===5?'Find 10%, then halve it to make 5%.':'Build the percentage from 10% and 5%.';}
+function mentalSteps(a,p,u){if(p===50)return ['50% means one half.',`${show(a,u)} ÷ 2 = ${show(pct(a,p),u)}.`];if(p===25)return ['25% means one quarter.',`${show(a,u)} ÷ 4 = ${show(pct(a,p),u)}.`];let ten=a/10;return [`10% = ${show(a,u)} ÷ 10 = ${show(ten,u)}.`,p===10?`The answer is ${show(ten,u)}.`:p===20?`20% = 2 × 10% = ${show(ten*2,u)}.`:`5% is half of 10%: ${show(ten,u)} ÷ 2 = ${show(ten/2,u)}.`];}
+function emptySkills(){return Object.fromEntries(CORE.map(k=>[k,{level:0,history:[],evidence:[],independent:0,seen:0,reason:'Waiting for more independent answers'}]));}
+function blank(seed,now=Date.now()){return {version:VERSION,seed:seed>>>0,startedAt:now,endedAt:null,phase:'active',lessonSeen:false,skills:emptySkills(),records:[]};}
+function current(s){return s.records[s.records.length-1];}
+function choose(s){
+ const index=s.records.length,r=rng(hash(s.seed,index+971));let focus='of',level=0,family='mental';
+ if(index<6){const prior=s.records,good=prior.filter(x=>x.status==='accepted'&&!x.hints&&!x.example&&x.parts.every(p=>p.attempts===1)).length;
+  const weak=index>=2&&good<Math.ceil(index/2);let percent=weak?[50,10][index%2]:[50,10,25,20,5,25][index];
+  return {seed:hash(s.seed,index*79+11),family:'mental',focus:'of',level:0,calc:false,percent,mentalVariant:index<2?0:Math.floor(r()*3)};
+ }
+ if(index===6)return {seed:hash(s.seed,index*79+11),family:'bridge',focus:'of',level:0,calc:true};
+ if(index===7)focus='inc';else if(index===8)focus='dec';else{
+  const prev=current(s),lastTwo=s.records.slice(-2).map(x=>x.q.focus);
+  let overdue=CORE.filter(k=>!s.records.slice(-6).some(x=>x.q.focus===k));
+  if(overdue.length)focus=overdue[Math.floor(r()*overdue.length)];
+  else if(prev&&(prev.status==='revealed'||prev.parts.some(x=>x.attempts>1)||prev.hints||prev.example)&&!(lastTwo.length===2&&lastTwo.every(x=>x===prev.q.focus)))focus=prev.q.focus;
+  else{
+   let weights=CORE.map(k=>{const t=s.skills[k],recent=t.history.slice(-6),rate=recent.length?recent.filter(x=>x.good).length/recent.length:0;return [k,1.2+(1-rate)*1.6+(3-t.level)*.15];});
+   if(lastTwo.length===2&&lastTwo[0]===lastTwo[1])weights=weights.filter(x=>x[0]!==lastTwo[0]);
+   let x=r()*weights.reduce((sum,a)=>sum+a[1],0);focus=weights[weights.length-1][0];for(const pair of weights){x-=pair[1];if(x<=0){focus=pair[0];break;}}
+  }
+ }
+ level=s.skills[focus].level;
+ const prev=current(s);if(prev?.q.focus===focus&&(prev.status==='revealed'||prev.hints||prev.parts.some(p=>p.attempts>1)))level=Math.max(0,level-1);
+ else if(level>0&&index%9===0)level--;
+ const recentFamilies=s.records.slice(-5).map(x=>x.q.family),pool=POOLS[focus][level];let fresh=pool.filter(x=>!recentFamilies.includes(x));if(!fresh.length)fresh=pool;
+ family=fresh[Math.floor(r()*fresh.length)];return {seed:hash(s.seed,index*79+11),family,focus,level,calc:true};
+}
+function nextRecord(s){let key=choose(s),q;const signatures=new Set(s.records.map(x=>x.q.signature));for(let j=0;j<150;j++){q=generate({...key,seed:hash(key.seed,j)});if(!signatures.has(q.signature))return {q,status:'open',parts:q.parts.map(()=>({raw:'',firstRaw:'',attempts:0,correct:false})),draft:q.parts.map(()=>''),hints:0,example:false,calculatorUsed:false,processed:false,points:0,openedAt:Date.now()};}throw Error('Could not generate a fresh question');}
+function create(seed=1,now=Date.now()){const s=blank(seed,now);s.records.push(nextRecord(s));return s;}
+function updateSkills(s,r){
+ if(r.processed)return;r.processed=true;
+ const index=s.records.indexOf(r);
+ if(!r.q.calc){if(index===5){const independent=s.records.filter(x=>!x.q.calc&&x.status==='accepted'&&!x.hints&&!x.example&&x.parts.every(p=>p.attempts===1)).length;s.skills.of.level=independent>=5?1:0;s.skills.of.reason=independent>=5?'Secure start: ready for a wider range of worded percentage amounts':'More friendly percentage amounts will be offered';}return;}
+ for(const skill of new Set(r.q.parts.map(p=>p.skill))){let indices=r.q.parts.flatMap((p,i)=>p.skill===skill?[i]:[]),good=r.status==='accepted'&&!r.hints&&!r.example&&indices.every(i=>r.parts[i].correct&&r.parts[i].attempts===1),t=s.skills[skill];
+  t.seen++;if(good)t.independent++;t.history.push({good,level:r.q.level,index,family:r.q.family});
+  if(r.q.level>=t.level){t.evidence.push(good);t.evidence=t.evidence.slice(-5);}
+  if(t.evidence.length>=3&&t.evidence.slice(-3).every(Boolean)&&t.level<3){t.level++;t.evidence=[];t.reason='Three independent successes at the working level: more demanding wording / connected steps';}
+  else if(t.evidence.length>=3&&t.evidence.slice(-3).filter(x=>!x).length>=2){t.level=Math.max(0,t.level-1);t.evidence=[];t.reason='More consolidation after two supported or unsuccessful attempts in three';}
+  else t.reason=good?'Independent success recorded; building consistent evidence':'Support or correction recorded; a related question will return with manageable numbers';
+ }
+}
+function submit(s,raws){if(s.phase!=='active')return {status:'finished'};let rec=current(s);if(rec.status!=='open')return {status:'locked'};if(!Array.isArray(raws)||raws.length!==rec.parts.length)return {status:'invalid',errors:[{index:0,message:'Complete the answer boxes.'}]};
+ let marks=[],errors=[];rec.parts.forEach((state,i)=>{if(state.correct)return;let m=mark(raws[i],rec.q.parts[i]);marks[i]=m;if(!m.valid)errors.push({index:i,message:m.error});});
+ if(errors.length)return {status:'invalid',errors};
+ marks.forEach((m,i)=>{if(!m)return;let state=rec.parts[i];state.raw=String(raws[i]);rec.draft[i]=state.raw;if(state.attempts===0)state.firstRaw=state.raw;state.attempts++;state.correct=m.correct;});
+ if(rec.parts.every(x=>x.correct)){rec.status='accepted';rec.points=rec.hints||rec.example?3:rec.parts.some(x=>x.attempts>1)?5:10;updateSkills(s,rec);return {status:'accepted',marks};}
+ return {status:'retry',marks};
+}
+function hint(s){const r=current(s);if(s.phase!=='active'||r.status!=='open')return false;r.hints=Math.min(2,r.hints+1);return true;}
+function example(s){const r=current(s);if(s.phase==='active'&&r.status==='open')r.example=true;}
+function canReveal(s){const r=current(s);return s.phase==='active'&&r.status==='open'&&(r.hints>=2||r.parts.some(p=>p.attempts>0));}
+function reveal(s){if(!canReveal(s))return false;let r=current(s);r.status='revealed';r.points=0;updateSkills(s,r);return true;}
+function next(s){if(s.phase!=='active'||current(s).status==='open')return false;if(s.records.length>=LIMIT){finish(s);return false;}s.records.push(nextRecord(s));return true;}
+function finish(s,now=Date.now()){if(s.phase!=='active')return;const r=current(s);if(r.status==='open')r.status='unfinished';s.phase='finished';s.endedAt=now;}
+function stats(s){let closed=s.records.filter(r=>['accepted','revealed'].includes(r.status)),accepted=closed.filter(r=>r.status==='accepted'),independent=accepted.filter(r=>r.points===10),correctParts=s.records.reduce((n,r)=>n+r.parts.filter(p=>p.correct).length,0),attemptedParts=s.records.reduce((n,r)=>n+r.parts.filter(p=>p.attempts>0).length,0);return {completed:closed.length,accepted:accepted.length,independent:independent.length,points:closed.reduce((n,r)=>n+r.points,0),supported:accepted.length-independent.length,revealed:closed.filter(r=>r.status==='revealed').length,correctParts,attemptedParts,seen:s.records.length};}
+function feedback(rec,i){const p=rec.q.parts[i],s=rec.parts[i];if(s.correct)return 'Correct.';if(!s.attempts)return '';if(p.kind==='choice')return 'Not yet. Read what the question asks for, then check your choice.';
+ const n=parse(s.raw,p.unit,p.integer),d=rec.q.data;if(!n.ok)return n.error;if(p.recipe?.kind==='percentage'){
+  if(p.skill!=='of'&&n.value===d.change)return `You found the size of the change. The question asks for the ${p.skill==='inc'?'new total':'amount remaining'}.`;
+  if(p.skill==='of'&&(n.value===d.base+d.change||n.value===d.base-d.change))return 'You found a total after a change. This question asks for the percentage amount only.';
+  if(n.value===d.base)return 'That is the original whole amount. Work out the amount the question asks for.';
+ }
+ if(n.value===Math.round(p.answer/100)&&p.unit==='£')return 'Check pounds and pence. The answer box is in pounds.';
+ if(Math.abs(n.value-p.answer)<=100)return 'Your answer is close. Check the arithmetic and any pence; an exact answer is needed here.';
+ return 'Not yet. Check which amount represents 100%, then check your calculation.';
+}
+function serialise(s){return JSON.stringify({version:VERSION,seed:s.seed,startedAt:s.startedAt,endedAt:s.endedAt,phase:s.phase,lessonSeen:s.lessonSeen,records:s.records.map(r=>({key:r.q.key,status:r.status,parts:r.parts,draft:r.draft,hints:r.hints,example:r.example,calculatorUsed:r.calculatorUsed,openedAt:r.openedAt}))});}
+function restore(raw){
+ if(typeof raw!=='string'||raw.length>3000000)throw Error('Saved session is too large');const o=JSON.parse(raw);
+ if(o?.version!==VERSION||!Number.isInteger(o.seed)||o.seed<0||o.seed>4294967295||!Number.isFinite(o.startedAt)||!['active','finished'].includes(o.phase)||!Array.isArray(o.records)||!o.records.length||o.records.length>LIMIT)throw Error('Saved session is not compatible');
+ let s=blank(o.seed,o.startedAt);s.lessonSeen=!!o.lessonSeen;
+ for(let i=0;i<o.records.length;i++){
+  let old=o.records[i],r=nextRecord(s);if(JSON.stringify(old.key)!==JSON.stringify(r.q.key))throw Error('Saved question sequence could not be validated');
+  if(!['open','accepted','revealed','unfinished'].includes(old.status)||!Array.isArray(old.parts)||old.parts.length!==r.parts.length||!Number.isInteger(old.hints)||old.hints<0||old.hints>2)throw Error('Saved answer state is invalid');
+  if(i<o.records.length-1&&!['accepted','revealed'].includes(old.status))throw Error('Saved sequence is incomplete');
+  r.status=old.status;r.hints=old.hints;r.example=!!old.example;r.calculatorUsed=r.q.calc&&!!old.calculatorUsed;
+  r.parts=old.parts.map((p,j)=>{if(!Number.isInteger(p.attempts)||p.attempts<0||p.attempts>100000||typeof p.correct!=='boolean')throw Error('Invalid attempt count');let raw=String(p.raw??'').slice(0,48),firstRaw=String(p.firstRaw??'').slice(0,48);if(p.attempts){const m=mark(raw,r.q.parts[j]);if(!m.valid||m.correct!==p.correct||!mark(firstRaw,r.q.parts[j]).valid||(p.attempts===1&&raw!==firstRaw))throw Error('Saved answer did not pass marking validation');}else if(p.correct||raw||firstRaw)throw Error('Missing saved attempt');return {raw,firstRaw,attempts:p.attempts,correct:p.correct};});
+  if(r.status==='accepted'&&!r.parts.every(p=>p.correct))throw Error('Saved score is invalid');
+  if(r.status==='open'&&r.parts.every(p=>p.correct))throw Error('Invalid open question');
+  if(r.status==='revealed'&&r.hints<2&&!r.parts.some(p=>p.attempts))throw Error('Invalid reveal state');
+  r.draft=r.q.parts.map((_,j)=>String(old.draft?.[j]??'').slice(0,48));r.openedAt=Number.isFinite(old.openedAt)?old.openedAt:o.startedAt;
+  r.points=r.status==='accepted'?(r.hints||r.example?3:r.parts.some(p=>p.attempts>1)?5:10):0;
+  s.records.push(r);if(['accepted','revealed'].includes(r.status))updateSkills(s,r);
+ }
+ s.phase=o.phase;s.endedAt=o.phase==='finished'&&Number.isFinite(o.endedAt)?o.endedAt:null;
+ if(s.phase==='active'&&current(s).status==='unfinished')throw Error('Invalid active session');
+ if(s.phase==='finished'&&current(s).status==='open')throw Error('Invalid finished session');
+ return s;
+}
+/* A tiny rational-number calculator, not eval(). Ordinary operation precedence is used. */
+function calculate(expression){
+ const clean=String(expression).replace(/×/g,'*').replace(/[÷]/g,'/').replace(/[−–]/g,'-').replace(/\s/g,'');
+ if(!clean||clean.length>160||!/^[0-9.+\-*/()]+$/.test(clean))throw Error('Use numbers, decimal points, +, −, ×, ÷ and brackets only.');
+ const tokens=clean.match(/(?:\d+(?:\.\d*)?|\.\d+)|[+\-*/()]/g);if(!tokens||tokens.join('')!==clean)throw Error('Check the decimal points.');let i=0;
+ const abs=n=>n<0n?-n:n,gcd=(a,b)=>{a=abs(a);b=abs(b);while(b){[a,b]=[b,a%b];}return a||1n;};
+ function rat(n,d=1n){if(!d)throw Error('Cannot divide by zero.');if(d<0n){n=-n;d=-d;}let g=gcd(n,d);n/=g;d/=g;if(abs(n)>10n**100n||d>10n**100n)throw Error('This calculation is too large.');return {n,d};}
+ function atom(){let t=tokens[i++];if(t==='+'||t==='-'){let a=atom();return t==='-'?rat(-a.n,a.d):a;}if(t==='('){let a=sum();if(tokens[i++]!==')')throw Error('Close the bracket.');return a;}if(!t||!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(t))throw Error('Enter a number after the operation.');let [a='0',b='']=t.split('.');if(a.length+b.length>18)throw Error('Use a shorter number.');return rat(BigInt((a||'0')+b),10n**BigInt(b.length));}
+ function product(){let a=atom();while(tokens[i]==='*'||tokens[i]==='/'){let op=tokens[i++],b=atom();a=op==='*'?rat(a.n*b.n,a.d*b.d):rat(a.n*b.d,a.d*b.n);}return a;}
+ function sum(){let a=product();while(tokens[i]==='+'||tokens[i]==='-'){let op=tokens[i++],b=product();a=rat(a.n*b.d+(op==='+'?1n:-1n)*b.n*a.d,a.d*b.d);}return a;}
+ let out=sum();if(i!==tokens.length)throw Error('Check the operations and brackets.');if(abs(out.n)>1000000000000n*out.d)throw Error('Result is too large for this calculator.');
+ let scale=10000000000n,n=abs(out.n),rounded=(n*scale*2n+out.d)/(out.d*2n),whole=rounded/scale,frac=String(rounded%scale).padStart(10,'0').replace(/0+$/,'');
+ const text=(out.n<0n&&rounded!==0n?'-':'')+whole+(frac?'.'+frac:'');return {text,rounded:(n*scale)%out.d!==0n};
+}
+const api={VERSION,LIMIT,CORE,LABELS,POOLS,rng,hash,shuffle,decimal,short,show,pct,parse,mark,valueOf,generate,create,current,submit,hint,example,canReveal,reveal,next,finish,stats,feedback,serialise,restore,calculate};
+if(typeof module!=='undefined'&&module.exports)module.exports=api;root.FSPercent=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
+
+</script>
+<script>
+(function(){
+'use strict';
+const E=window.FSPercent,$=id=>document.getElementById(id),KEY='fs1-percentages-studio-v1-session',PREF='fs1-percentages-studio-v1-display';
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rich=x=>esc(x).replace(/(£[\d,]+(?:\.\d+)?|\b\d+(?:\.\d+)?%)/g,'<b>$1</b>');
+let session=null,saved=null,view='setupView',storageOK=true,saveTimer=null,toastTimer=null,calcOpen=false,calcResult=null,calcJustEvaluated=false,shownSolution=false,exampleQuestion=null,exampleStep=0;
+function seed(){try{return crypto.getRandomValues(new Uint32Array(1))[0];}catch{return (Date.now()^Math.floor(Math.random()*4294967296))>>>0;}}
+function toast(text){clearTimeout(toastTimer);$('toast').textContent=text;toastTimer=setTimeout(()=>$('toast').textContent='',4500);}
+function notice(text){$('storageNotice').hidden=false;$('storageNotice').textContent=text;}
+function changeView(id){view=id;for(const n of ['setupView','bridgeView','sessionView','resultsView'])$(n).hidden=n!==id;window.scrollTo({top:0,behavior:'instant'});}
+function openDialog(id){if(!$(id).open)$(id).showModal();}
+function closeDialogs(){document.querySelectorAll('dialog[open]').forEach(x=>x.close('cancel'));}
+function ask(title,text,button='Continue'){
+ const d=$('confirmDialog');if(d.open)return Promise.resolve(false);$('confirmHeading').textContent=title;$('confirmText').textContent=text;$('confirmOK').textContent=button;
+ return new Promise(resolve=>{d.returnValue='cancel';d.addEventListener('close',()=>resolve(d.returnValue==='ok'),{once:true});d.showModal();$('confirmCancel').focus();});
+}
+$('confirmOK').onclick=()=>$('confirmDialog').close('ok');$('confirmCancel').onclick=()=>$('confirmDialog').close('cancel');document.querySelectorAll('[data-close]').forEach(x=>x.onclick=()=>$(x.dataset.close).close());
+function save(){clearTimeout(saveTimer);if(!session||!storageOK)return;try{localStorage.setItem(KEY,E.serialise(session));$('saveStatus').textContent='Saved in this browser only. No learner data is sent anywhere.';}catch{storageOK=false;notice('Browser saving is unavailable or full. Keep this tab open and export your results before closing it.');$('saveStatus').textContent='Not saved — keep this tab open until you finish.';}}
+function soon(){clearTimeout(saveTimer);saveTimer=setTimeout(save,300);}
+function pull(){if(!session||view!=='sessionView')return;let r=E.current(session);r.q.parts.forEach((p,i)=>{r.draft[i]=p.kind==='number'?$('ans-'+i)?.value??r.draft[i]:document.querySelector(`input[name="part-${i}"]:checked`)?.value??r.draft[i]??'';});}
+function tableHTML(t){return t?`<div class="table-scroll"><table class="data-table"><thead><tr>${t.headers.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(row=>`<tr>${row.map(x=>`<td>${rich(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`:'';}
+function linesHTML(q){return q.lines.map(x=>'<p>'+rich(x)+'</p>').join('');}
+function fieldsHTML(r){return r.q.parts.map((p,i)=>{
+ const prefix=r.q.parts.length>1?String.fromCharCode(97+i)+') ':'',value=r.parts[i].correct?r.parts[i].raw:r.draft[i]||'',label=prefix+p.label;
+ if(p.kind==='choice')return `<fieldset class="answer-item" id="part-${i}"><legend>${esc(label)}</legend><div class="choice-options">${p.options.map(o=>`<label class="choice-option"><input type="radio" name="part-${i}" value="${esc(o.id)}" ${o.id===value?'checked':''} aria-describedby="feedback-${i}"><span>${esc(o.text)}</span></label>`).join('')}</div><div class="part-feedback" id="feedback-${i}"></div></fieldset>`;
+ return `<div class="answer-item" id="part-${i}"><label for="ans-${i}">${esc(label)}</label><div class="number-shell">${p.unit==='£'?'<span class="answer-unit" aria-hidden="true">£</span>':''}<input id="ans-${i}" data-part="${i}" type="text" inputmode="${p.integer?'numeric':'decimal'}" maxlength="48" autocomplete="off" spellcheck="false" value="${esc(value)}" placeholder="Your answer" aria-label="${esc(label+(p.unit?' in '+(p.unit==='£'?'pounds':p.unit):''))}" aria-describedby="feedback-${i} answerInstructions">${p.unit&&p.unit!=='£'?`<span class="answer-unit" aria-hidden="true">${esc(p.unit)}</span>`:''}</div><div class="part-feedback" id="feedback-${i}"></div></div>`;
+ }).join('');}
+function message(text,kind=''){let el=$('checkMessage');el.textContent=text;el.className='notice'+(kind?' '+kind:'');el.hidden=!text;}
+function updateCalcTargets(){
+ if(!session)return;let rec=E.current(session),old=$('calcTarget').value,possible=rec.q.parts.flatMap((p,i)=>p.kind==='number'&&!rec.parts[i].correct?[i]:[]);
+ $('calcTarget').innerHTML=possible.map(i=>`<option value="${i}">${rec.q.parts.length>1?String.fromCharCode(97+i)+') ':''}${esc(rec.q.parts[i].label)}</option>`).join('');if(possible.includes(Number(old)))$('calcTarget').value=old;
+ $('calcTargetWrap').hidden=possible.length<2;$('calcUse').disabled=!calcResult||rec.status!=='open'||!possible.length;
+}
+function updateFeedback(){
+ if(!session)return;const r=E.current(session),locked=r.status!=='open';
+ r.parts.forEach((state,i)=>{let el=$('feedback-'+i);if(!el)return;el.className='part-feedback';document.querySelectorAll(`#part-${i} input`).forEach(x=>{x.disabled=locked||state.correct;x.removeAttribute('aria-invalid');});
+  if(state.correct){el.classList.add('good');el.textContent='✓ Correct.';}
+  else if(r.status==='revealed'){el.textContent='Model answer: '+E.valueOf(r.q.parts[i])+'.';}
+  else if(state.attempts){el.classList.add('error');el.textContent=E.feedback(r,i);document.querySelectorAll(`#part-${i} input`).forEach(x=>x.setAttribute('aria-invalid','true'));}
+  else el.textContent='';
+ });
+ $('checkBtn').hidden=locked;$('checkBtn').disabled=locked;$('nextBtn').hidden=!locked;$('nextBtn').textContent=session.records.length>=E.LIMIT?'View results →':'Next question →';
+ $('answerActions').hidden=locked;$('hintBtn').disabled=r.hints>=2;$('hintBtn').textContent=r.hints?'Another hint':'A hint';$('revealBtn').disabled=!E.canReveal(session);$('revealHelp').hidden=locked||E.canReveal(session);
+ $('hintBox').hidden=locked||!r.hints;$('hintBox').innerHTML=r.q.hints.slice(0,r.hints).map(x=>'<p>'+rich(x)+'</p>').join('');
+ $('solutionBtn').hidden=!locked;$('solutionBtn').setAttribute('aria-expanded',String(shownSolution));$('solutionBtn').textContent=shownSolution?'Hide worked solution':'View worked solution';$('solutionBox').hidden=!locked||!shownSolution;
+ $('solutionBox').innerHTML=locked&&shownSolution?'<h3>Worked solution</h3>'+r.q.steps.map(x=>'<p>'+rich(x)+'</p>').join(''):'';
+ $('points').textContent=E.stats(session).points+' points';updateCalcTargets();
+}
+function resetCalculator(){calcResult=null;calcJustEvaluated=false;$('calcExpression').value='';$('calcOutput').textContent='0';$('calcStatus').textContent='Enter a calculation, then press =.';$('calcStatus').className='calc-status';$('calcUse').disabled=true;}
+function applyCalculatorLayout(){
+ const allowed=!!session&&E.current(session).q.calc;calcOpen=calcOpen&&allowed;$('calculatorPanel').hidden=!calcOpen;$('questionGrid').classList.toggle('with-calculator',calcOpen);$('calcBtn').disabled=!allowed;$('calcBtn').textContent=!allowed?'Calculator locked':calcOpen?'Hide calculator':'Calculator';$('calcBtn').setAttribute('aria-expanded',String(calcOpen));$('calcBtn').title=allowed?'Use the built-in calculator':'Available after the first six questions';
+}
+function renderSession(focus=true){
+ if(!session)return;if(session.phase==='finished'){renderResults();return;}
+ const r=E.current(session),q=r.q;
+ if(q.calc&&!session.lessonSeen){changeView('bridgeView');if(focus)$('bridgeTitle').focus({preventScroll:true});return;}
+ changeView('sessionView');shownSolution=r.status==='revealed';$('questionHeading').textContent='Question '+session.records.length;$('calculationStyle').textContent=q.calc?'Calculator allowed':'Without a calculator';
+ $('questionText').innerHTML=linesHTML(q);$('questionTable').innerHTML=tableHTML(q.table);$('questionGuidance').textContent=q.parts.some(x=>x.integer)?'Give a whole number when you are counting people or items.':q.parts.some(x=>x.unit==='£')?'Give money in pounds, to the nearest penny where needed.':q.parts.some(x=>x.unit)?'Give your answer in the unit shown.':'Write your final answer in the box.';
+ $('answerHeading').textContent=q.parts.length>1?'Your answers':'Your answer';$('answerInstructions').textContent=q.parts.some(x=>x.kind==='choice')?'Choose an option and complete any answer box.':q.parts.some(x=>x.unit==='£')?'Whole pounds or pounds and pence are both accepted.':'Enter a number, not a calculation.';$('checkBtn').textContent=q.parts.length>1?'Check answers':'Check answer';
+ $('answerFields').innerHTML=fieldsHTML(r);message('');updateFeedback();applyCalculatorLayout();
+ if(r.status==='accepted')message(r.points===10?'Correct — 10 points.':r.points===5?'Correct — 5 points. You worked through the correction.':'Correct — 3 points. You used the support and completed it.','success');
+ if(r.status==='revealed')message('Read the method, then try a fresh question. No points are awarded for a revealed solution.');
+ document.querySelectorAll('#answerFields input').forEach(el=>{el.addEventListener('input',()=>{pull();soon();});el.addEventListener('change',()=>{pull();soon();});if(el.dataset.part!==undefined)el.addEventListener('focus',()=>{let val=el.dataset.part;if([...$('calcTarget').options].some(o=>o.value===val))$('calcTarget').value=val;});});
+ if(focus)$('questionHeading').focus({preventScroll:true});
+}
+$('answerForm').onsubmit=event=>{
+ event.preventDefault();if(!session||view!=='sessionView')return;pull();let r=E.current(session),out=E.submit(session,r.draft);
+ if(out.status==='locked'||out.status==='finished')return;
+ if(out.status==='invalid'){message('Check the highlighted answer. No attempt has been counted.','error');out.errors.forEach(x=>{let f=$('feedback-'+x.index);f.textContent=x.message;f.className='part-feedback error';document.querySelectorAll(`#part-${x.index} input`).forEach(el=>el.setAttribute('aria-invalid','true'));});$('part-'+out.errors[0].index).querySelector('input')?.focus();return;}
+ updateFeedback();if(out.status==='accepted'){message(r.points===10?'Correct — 10 points.':r.points===5?'Correct — 5 points. You worked through the correction.':'Correct — 3 points. You used the support and completed it.','success');$('nextBtn').focus();}else message(r.q.parts.length>1?'Keep any correct part. Check the feedback and try the other part again.':'Not quite yet. Check the feedback, or use a hint.','error');save();
+};
+$('nextBtn').onclick=()=>{if(!session)return;closeDialogs();resetCalculator();if(E.next(session)){renderSession();save();}else if(session.phase==='finished'){save();renderResults();}};
+$('hintBtn').onclick=()=>{if(!session)return;pull();if(E.hint(session)){updateFeedback();save();}};
+$('revealBtn').onclick=async()=>{if(!session||!E.canReveal(session))return;if(!await ask('Work through this solution?','This closes the question without points. You can read the method, then practise with a fresh question.','Show solution'))return;pull();if(E.reveal(session)){shownSolution=true;updateFeedback();message('Read the method, then try a fresh question. No points are awarded for a revealed solution.');save();$('nextBtn').focus();}};
+$('solutionBtn').onclick=()=>{shownSolution=!shownSolution;updateFeedback();};
+$('finishBtn').onclick=async()=>{if(!session)return;if(!await ask('Finish this practice?','Your answered questions, attempts and worked solutions will be available in the review. An unanswered question is recorded as unfinished.','Finish & review'))return;pull();E.finish(session);save();renderResults();};
+$('bridgeBtn').onclick=()=>{if(!session)return;session.lessonSeen=true;calcOpen=true;resetCalculator();renderSession();save();};
+function updateResume(){if(!saved){$('resumeCard').hidden=true;return;}let st=E.stats(saved);$('resumeCard').hidden=false;$('resumeTitle').textContent=saved.phase==='finished'?'The previous practice review is saved':'A practice session is saved on this device';$('resumeInfo').textContent=`${st.completed} questions completed · ${st.points} points. On a shared computer, clear this before a different learner starts.`;$('resumeBtn').textContent=saved.phase==='finished'?'View saved review':'Continue saved session';}
+$('startBtn').onclick=async()=>{if(saved&&!await ask('Start a fresh practice?','This replaces the locally saved session. Export its review first if you need to keep a separate copy.','Start fresh'))return;try{session=E.create(seed());saved=null;calcOpen=false;resetCalculator();updateResume();renderSession();save();}catch(e){notice('The practice could not start: '+e.message);}};
+$('resumeBtn').onclick=()=>{if(!saved)return;session=saved;saved=null;calcOpen=false;resetCalculator();updateResume();renderSession();save();};
+$('discardBtn').onclick=async()=>{if(!await ask('Clear the saved session?','This clears only the saved practice for this app in this browser. It does not affect any other app.','Clear session'))return;try{localStorage.removeItem(KEY);}catch{notice('This browser could not clear its storage.');return;}saved=null;session=null;updateResume();toast('Saved session cleared.');};
+$('againBtn').onclick=()=>{if(session)saved=session;resetCalculator();calcOpen=false;closeDialogs();updateResume();changeView('setupView');$('setupTitle').focus?.({preventScroll:true});};
+function renderExampleSteps(){
+ if(!exampleQuestion)return;let q=exampleQuestion;$('exampleBody').innerHTML=`<div class="mini-method"><div class="question-text">${linesHTML(q)}</div>${tableHTML(q.table)}</div>${q.steps.slice(0,exampleStep).map((x,i)=>`<div class="method-step"><span>${i+1}</span><p>${rich(x)}</p></div>`).join('')}<button id="exampleNext" class="primary method-toggle" ${exampleStep>=q.steps.length?'disabled':''}>${exampleStep>=q.steps.length?'All steps shown':'Show next step'}</button><p class="help small-print">Return to your question and use the same idea with your own numbers.</p>`;
+ $('exampleNext').onclick=()=>{exampleStep=Math.min(q.steps.length,exampleStep+1);renderExampleSteps();if(exampleStep<q.steps.length)$('exampleNext').focus();};
+}
+$('exampleBtn').onclick=()=>{
+ if(!session)return;pull();const r=E.current(session);E.example(session);let q;
+ try{for(let i=1;i<=100;i++){q=E.generate({...r.q.key,seed:E.hash(r.q.key.seed,12345+i)});if(q.data.base!==r.q.data.base&&q.signature!==r.q.signature)break;}if(!q||q.data.base===r.q.data.base)throw Error('A different example could not be generated');exampleQuestion=q;exampleStep=0;renderExampleSteps();openDialog('exampleDialog');updateFeedback();save();}catch(e){toast(e.message);}
+};
+$('calcBtn').onclick=()=>{if(!session||!E.current(session).q.calc)return;calcOpen=!calcOpen;applyCalculatorLayout();if(calcOpen)$('calcExpression').focus();};$('calcClose').onclick=()=>{calcOpen=false;applyCalculatorLayout();$('calcBtn').focus();};
+function calculationInputChanged(){calcResult=null;calcJustEvaluated=false;$('calcOutput').textContent='…';$('calcUse').disabled=true;$('calcStatus').textContent='Press = to calculate this expression.';$('calcStatus').className='calc-status';}
+$('calcExpression').oninput=calculationInputChanged;
+function calculateNow(){
+ if(!session||!E.current(session).q.calc||view!=='sessionView')return;
+ try{calcResult=E.calculate($('calcExpression').value.replace(/[xX]/g,'×'));$('calcOutput').textContent=calcResult.text;$('calcStatus').textContent=calcResult.rounded?'Display rounded to 10 decimal places.':'Exact result.';$('calcStatus').className='calc-status';calcJustEvaluated=true;E.current(session).calculatorUsed=true;updateCalcTargets();soon();}
+ catch(e){calcResult=null;calcJustEvaluated=false;$('calcOutput').textContent='—';$('calcStatus').textContent=e.message;$('calcStatus').className='calc-status error';$('calcUse').disabled=true;}
+}
+function calcKey(key){
+ if(!session||!E.current(session).q.calc)return;
+ if(key==='='){calculateNow();return;}if(key==='AC'){resetCalculator();$('calcExpression').focus();return;}
+ const input=$('calcExpression');if(calcJustEvaluated&&key!=='DEL'){input.value=/^[0-9.(]$/.test(key)?'':(calcResult?.text||'');input.setSelectionRange(input.value.length,input.value.length);}
+ let a=input.selectionStart??input.value.length,b=input.selectionEnd??a;
+ if(key==='DEL'){if(a===b&&a>0)a--;input.value=input.value.slice(0,a)+input.value.slice(b);input.focus();input.setSelectionRange(a,a);}
+ else if(input.value.length-(b-a)+key.length<=160){input.value=input.value.slice(0,a)+key+input.value.slice(b);input.focus();input.setSelectionRange(a+key.length,a+key.length);}
+ calculationInputChanged();
+}
+document.querySelectorAll('[data-calc]').forEach(b=>b.onclick=()=>calcKey(b.dataset.calc));
+$('calcExpression').onkeydown=e=>{if(e.key==='Enter'||e.key==='='){e.preventDefault();calculateNow();}else if(e.key==='Escape'){e.preventDefault();calcOpen=false;applyCalculatorLayout();$('calcBtn').focus();}};
+$('calcUse').onclick=()=>{
+ if(!session||!calcResult)return;let r=E.current(session),i=Number($('calcTarget').value),p=r.q.parts[i];if(r.status!=='open'||!p||p.kind!=='number'||r.parts[i].correct)return;
+ let parsed=E.parse(calcResult.text,p.unit,p.integer);if(!parsed.ok){$('calcStatus').textContent=parsed.error+' Check the calculation before entering your answer.';$('calcStatus').className='calc-status error';return;}
+ let input=$('ans-'+i);input.value=calcResult.text;pull();soon();input.focus();toast('Result placed in the answer box. Check the question, then check your answer.');
+};
+function statusLabel(r){return r.status==='accepted'?(r.points===10?'Correct independently':r.points===5?'Correct after retry':'Correct with support'):r.status==='revealed'?'Solution viewed':'Unfinished';}
+function reviewHTML(r,i){return `<details class="review-card"><summary><span>Question ${i+1}</span><span class="review-status">${statusLabel(r)}</span></summary><div class="review-body"><div class="question-text">${linesHTML(r.q)}</div>${tableHTML(r.q.table)}${r.q.parts.map((p,j)=>{const a=r.parts[j],raw=a.raw||r.draft[j],display=p.kind==='choice'?(p.options.find(x=>x.id===raw)?.text||'No selection'):(raw||'No answer');return `<div class="review-part"><b>${r.q.parts.length>1?String.fromCharCode(97+j)+') ':''}${esc(p.label)}</b><p>Your answer: ${esc(display)}</p><p class="correct">Model answer: ${esc(E.valueOf(p))}</p><p>${a.correct?'Correct final answer.':'Not answered correctly.'} ${a.attempts} valid ${a.attempts===1?'attempt':'attempts'}.</p></div>`;}).join('')}<div class="review-method"><b>Worked solution</b>${r.q.steps.map(x=>'<p>'+rich(x)+'</p>').join('')}</div><p class="help small-print">${r.hints?r.hints+' hint'+(r.hints>1?'s':'')+' used':'No hints used'} · ${r.example?'Example viewed':'No example viewed'} · ${r.q.calc?(r.calculatorUsed?'Calculator used':'Calculator allowed'):'Non-calculator'} · ${r.points} points</p></div></details>`;}
+function renderResults(){if(!session)return;closeDialogs();changeView('resultsView');let st=E.stats(session);$('resultsSubtitle').textContent=`${st.completed} questions completed. ${st.accepted} completed correctly, including ${st.independent} without a retry or help.`;
+ $('resultMetrics').innerHTML=[[st.points,'Practice points'],[st.independent,'Correct independently'],[st.supported,'Correct with correction or support'],[st.correctParts,'Correct answer parts']].map(([v,t])=>`<div class="metric"><b>${v}</b><span>${esc(t)}</span></div>`).join('');$('reviewList').innerHTML=session.records.map(reviewHTML).join('');$('resultsHeading').focus({preventScroll:true});save();}
+function csvCell(v){let s=String(v??'');if(/^[\s]*[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';}
+function csv(s=session){
+ const rows=[['Build','Session seed','Question','Skill','Question family','Internal demand','Calculator allowed','Calculator used','Question outcome','Question points (once per question)','Part','Unit','First valid answer','Last submitted answer','Draft answer','Model answer','Correct','Attempts','Hints','Example used','Question text','Table data','Question seed']];
+ s.records.forEach((r,i)=>r.q.parts.forEach((p,j)=>{let a=r.parts[j];const display=x=>p.kind==='choice'?(p.options.find(o=>o.id===x)?.text||''):x;rows.push([E.VERSION,s.seed,i+1,E.LABELS[p.skill],r.q.family,r.q.level,r.q.calc,r.calculatorUsed,statusLabel(r),j===0?r.points:'',j+1,p.unit,display(a.firstRaw),display(a.raw),display(r.draft[j]),E.valueOf(p),a.correct,a.attempts,r.hints,r.example,r.q.lines.join('\n'),r.q.table?JSON.stringify(r.q.table):'',r.q.key.seed]);}));
+ return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
+}
+function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+function summary(s=session){const st=E.stats(s);return `Percentages Studio — Pearson Edexcel Functional Skills Level 1\nIndependent practice resource\nQuestions completed: ${st.completed}\nQuestions correct: ${st.accepted}\nCorrect independently: ${st.independent}\nCorrect with correction or support: ${st.supported}\nSolutions viewed: ${st.revealed}\nCorrect answer parts: ${st.correctParts}\nPractice points: ${st.points}\nFinal answers checked exactly; paper working not marked.\nNot an exam score or a predicted result.\nBuild: ${E.VERSION}\nSession seed: ${s.seed}\n`;}
+$('csvBtn').onclick=()=>{if(session)download('functional-skills-percentage-results.csv',csv(),'text/csv;charset=utf-8');};
+$('copyBtn').onclick=async()=>{if(!session)return;try{await navigator.clipboard.writeText(summary());toast('Summary copied.');}catch{download('functional-skills-percentage-summary.txt',summary(),'text/plain;charset=utf-8');toast('Clipboard unavailable. A text summary has been prepared instead.');}};
+let printStates=[];window.addEventListener('beforeprint',()=>{printStates=[...document.querySelectorAll('.review-card')].map(x=>x.open);document.querySelectorAll('.review-card').forEach(x=>x.open=true);});window.addEventListener('afterprint',()=>document.querySelectorAll('.review-card').forEach((x,i)=>x.open=!!printStates[i]));$('printBtn').onclick=()=>window.print();
+function teacherHTML(s){
+ if(!s)return '<p>No practice session has started yet.<br>There is no learner record to show.</p><p class="teacher-note">The learner screen does not display skill labels, internal difficulty levels or progress bars.</p>';
+ let st=E.stats(s),rows=E.CORE.map(k=>{let entries=s.records.flatMap((r,i)=>r.q.parts.flatMap((p,j)=>p.skill===k?[{r,p,a:r.parts[j],i}]:[])),attempted=entries.filter(x=>x.a.attempts>0),correct=entries.filter(x=>x.a.correct),t=s.skills[k];return `<tr><td><b>${esc(E.LABELS[k])}</b></td><td>${correct.length} / ${attempted.length}<br><span class="muted">correct / attempted parts</span></td><td>${t.level} / 3<br><span class="muted">${['Friendly, direct context','Wider contextual wording','Tables and connected parts','Level 1 reasoning and decisions'][t.level]}</span></td><td>${esc(t.reason)}</td></tr>`;}).join('');
+ return `<p><b>${st.completed}</b> questions completed · <b>${st.independent}</b> correct independently · <b>${st.correctParts}</b> correct parts.</p><p class="teacher-note">Internal demand is a question-selection setting, not an examination grade.<br>It can differ by skill and may temporarily be reduced for a confidence-building question.<br>The six mental starters are not counted as calculator-stage mastery evidence.</p><div class="table-scroll"><table class="data-table teacher-table"><thead><tr><th>Skill</th><th>Final answers</th><th>Internal demand</th><th>Latest adaptation</th></tr></thead><tbody>${rows}</tbody></table></div><p class="teacher-note">Calculator permission starts at Question 7.<br>Points never go down and there is no speed penalty.<br>Use the review and the learner's paper working together.</p><div class="button-row"><button class="quiet" id="teacherExport">Export learning record</button></div><h3>Reproducible session reference</h3><div class="key-data">Build: ${E.VERSION}<br>Session seed: ${s.seed}<br>Question families available: ${new Set(['mental','bridge',...Object.values(E.POOLS).flat(2)]).size}<br>Session safety limit: ${E.LIMIT} questions</div>`;
+}
+function teacherTab(name){let list=['progress','notes','sources'],panel={progress:'teacherProgress',notes:'teacherNotes',sources:'teacherSources'};for(let k of list){$(k+'Tab').setAttribute('aria-selected',String(k===name));$(k+'Tab').tabIndex=k===name?0:-1;$(panel[k]).hidden=k!==name;}}
+$('teacherBtn').onclick=()=>{pull();$('teacherSummary').innerHTML=teacherHTML(session||saved);$('buildInfo').textContent='Build '+E.VERSION+' · Original seeded question generators · No external runtime dependencies.';$('teacherExport')?.addEventListener('click',()=>{const s=session||saved;if(s)download('functional-skills-percentage-learning-record.csv',csv(s),'text/csv;charset=utf-8');});teacherTab('progress');openDialog('teacherDialog');};
+['progress','notes','sources'].forEach((k,i)=>{$(k+'Tab').onclick=()=>teacherTab(k);$(k+'Tab').onkeydown=e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();let order=['progress','notes','sources'],j=e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3;teacherTab(order[j]);$(order[j]+'Tab').focus();}};});
+function preferences(){let theme=document.body.dataset.theme,size=document.body.dataset.size;$('themeBtn').textContent=theme==='dark'?'Light mode':'Dark mode';$('themeBtn').setAttribute('aria-pressed',String(theme==='dark'));$('textBtn').textContent=size==='large'?'Standard text':'Larger text';$('textBtn').setAttribute('aria-pressed',String(size==='large'));try{localStorage.setItem(PREF,JSON.stringify({theme,size}));}catch{}}
+$('themeBtn').onclick=()=>{document.body.dataset.theme=document.body.dataset.theme==='dark'?'light':'dark';preferences();};$('textBtn').onclick=()=>{document.body.dataset.size=document.body.dataset.size==='large'?'normal':'large';preferences();};
+$('fullBtn').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else toast('Full screen is unavailable here. Try your browser’s full-screen control.');}catch{toast('The browser did not allow full screen. Try its own full-screen control.');}};document.addEventListener('fullscreenchange',()=>$('fullBtn').textContent=document.fullscreenElement?'Exit full screen':'Full screen');
+window.addEventListener('pagehide',()=>{pull();save();});document.addEventListener('visibilitychange',()=>{if(document.hidden){pull();save();}});
+try{let pref=JSON.parse(localStorage.getItem(PREF)||'null');if(pref){if(['light','dark'].includes(pref.theme))document.body.dataset.theme=pref.theme;if(['normal','large'].includes(pref.size))document.body.dataset.size=pref.size;}}catch{}preferences();
+try{let raw=localStorage.getItem(KEY);if(raw){try{saved=E.restore(raw);updateResume();}catch{notice('The saved session could not be validated. Start a fresh practice; no saved answers were loaded.');localStorage.removeItem(KEY);}}}catch{storageOK=false;notice('Saving is unavailable in this browser. The practice still works; keep the tab open until you finish.');}
+if(window.__FS_TEST__)window.FSAppTest={session:()=>session,saved:()=>saved,load:s=>{session=s;saved=null;renderSession(false);},renderSession,renderResults,csv,summary,teacherHTML,save,resetCalculator,calcKey,calculateNow,KEY};
+})();
+
+</script>
+</body>
+</html>
